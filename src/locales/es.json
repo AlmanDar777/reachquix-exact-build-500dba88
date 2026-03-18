@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "features": "Características",
+    "crm": "CRM",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "about": "Acerca de",
+    "login": "Iniciar sesión",
+    "getStarted": "Comienza Gratis"
+  },
+  "hero": {
+    "badge": "Plataforma de ventas impulsada por IA",
+    "title": "Prospección en frío que realmente obtiene respuestas.",
+    "subtitle": "Reachquix combina secuencias de correo electrónico impulsadas por IA con un CRM integrado — para que tu equipo pueda enviar de forma más inteligente, hacer seguimiento más rápido y cerrar más tratos.",
+    "cta": "Comienza Gratis",
+    "secondary": "Ver Demo",
+    "trust1": "Sin tarjeta de crédito",
+    "trust2": "Prueba gratuita de 14 días",
+    "trust3": "Cancela en cualquier momento"
+  },
+  "stats": {
+    "emails": "Correos Enviados",
+    "replies": "Tasa de Respuesta",
+    "users": "Usuarios Activos",
+    "countries": "Países"
+  },
+  "howItWorks": {
+    "title": "Cómo Funciona",
+    "subtitle": "Comienza en 4 simples pasos",
+    "step1": "Importar Contactos",
+    "step1desc": "Sincroniza tus Google Sheets o sube un archivo CSV",
+    "step2": "Crear Plantillas",
+    "step2desc": "Usa IA para escribir secuencias de correo personalizadas",
+    "step3": "Lanzar Campaña",
+    "step3desc": "Configura tu horario y deja que Reachquix haga el trabajo",
+    "step4": "Rastrear y Cerrar",
+    "step4desc": "Monitorea respuestas y gestiona tratos en el CRM"
+  },
+  "features": {
+    "title": "Todas las funciones que necesitas para cerrar más tratos.",
+    "subtitle": "Reachquix le da a tu equipo de ventas el kit completo — automatización de correo, CRM, sincronización con Google Sheets, escritura con IA y más — todo en una plataforma.",
+    "emailTitle": "Funciones de Automatización de Correo",
+    "crmTitle": "Funciones de CRM"
+  },
+  "pricing": {
+    "title": "Precios simples. Sin sorpresas.",
+    "subtitle": "Comienza gratis. Escala a medida que creces. Cancela en cualquier momento.",
+    "monthly": "Mensual",
+    "annual": "Anual (20% descuento)",
+    "starter": "Inicial",
+    "growth": "Crecimiento",
+    "agency": "Agencia",
+    "popular": "Más Popular",
+    "perMonth": "/mes",
+    "getStarted": "Comenzar",
+    "startTrial": "Iniciar Prueba Gratuita"
+  },
+  "about": {
+    "title": "Creado por personas que entienden tu mercado.",
+    "subtitle": "No somos una startup de Silicon Valley. Somos un equipo con sede en Dubái, EAU — y construimos Reachquix porque no pudimos encontrar una sola herramienta de prospección que realmente funcionara para el mercado del Golfo.",
+    "mission": "Nuestra Misión",
+    "missionText": "Dar a cada negocio en los EAU y la región MENA acceso a las mismas herramientas de prospección poderosas que usan las empresas Fortune 500. Sin el precio de Fortune 500."
+  },
+  "contact": {
+    "title": "Nos encantaría saber de ti.",
+    "subtitle": "Ya sea que tengas una pregunta, necesites ayuda o solo quieras saludar — nuestro equipo está aquí y responde rápido.",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "company": "Nombre de Empresa",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "send": "Enviar Mensaje",
+    "success": "¡Gracias! Recibimos tu mensaje y responderemos dentro de 24 horas."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Ideas, consejos y estrategias para el éxito en ventas.",
+    "readMore": "Leer Más →",
+    "all": "Todos"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "registered": "Registrada en la República de Estonia, Unión Europea.",
+    "product": "Producto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio"
+  },
+  "cta": {
+    "getstarted": "Comienza Gratis →",
+    "seePricing": "Ver Precios"
+  },
+  "eva": {
+    "welcome": "¡Hola! Soy Eva, tu asistente de Reachquix. Puedo ayudarte con preguntas sobre nuestra plataforma, precios, características y cómo empezar. ¿Qué te gustaría saber?",
+    "placeholder": "Escribe tu mensaje...",
+    "title": "Eva",
+    "online": "En línea",
+    "fallback": "¡Gran pregunta! Permíteme conectarte con nuestro equipo. Por favor envíanos un correo a support@reachquix.com o deja tu correo y te contactaremos en pocas horas.",
+    "tooltip": "Chatea con Eva"
+  },
+  "login": {
+    "title": "Prospección en piloto automático. Crecimiento bajo demanda.",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "remember": "Recuérdame",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "submit": "Iniciar Sesión",
+    "google": "Continuar con Google",
+    "noAccount": "¿No tienes cuenta?",
+    "signupLink": "Regístrate gratis →",
+    "error": "Correo o contraseña inválidos. Por favor intenta de nuevo."
+  },
+  "signup": {
+    "title": "Comienza a cerrar más tratos hoy.",
+    "benefits": ["Prueba gratuita de 14 días en plan Crecimiento", "Sin tarjeta de crédito requerida", "Configuración en menos de 5 minutos", "Google Sheets conectado en segundos", "Cancela en cualquier momento — sin preguntas"],
+    "name": "Nombre Completo",
+    "email": "Correo de Trabajo",
+    "password": "Contraseña",
+    "company": "Nombre de Empresa",
+    "phone": "Teléfono",
+    "plan": "Seleccionar Plan",
+    "submit": "Crear Cuenta Gratis →",
+    "google": "Registrarse con Google",
+    "terms": "Al crear una cuenta aceptas nuestros Términos de Servicio y Política de Privacidad.",
+    "hasAccount": "¿Ya tienes cuenta?",
+    "loginLink": "Inicia sesión →"
+  }
+}
