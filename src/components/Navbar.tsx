@@ -1,41 +1,83 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
-  { label: "Features", href: "#features" },
-  { label: "CRM", href: "#crm" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Blog", href: "#" },
-  { label: "About", href: "#trust" },
+  { label: "Features", href: "/features" },
+  { label: "CRM", href: "/#crm" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-    sections.forEach((s) => observer.observe(s));
-    return () => observer.disconnect();
-  }, []);
+  const location = useLocation();
 
   const handleClick = (href: string) => {
     setMobileOpen(false);
-    if (href.startsWith("#") && href.length > 1) {
-      const el = document.querySelector(href);
-      el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("/#")) {
+      const id = href.replace("/#", "");
+      if (location.pathname === "/") {
+        const el = document.getElementById(id);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }
     }
+  };
+
+  const isActive = (href: string) => {
+    if (href.startsWith("/#")) return false;
+    return location.pathname === href;
+  };
+
+  const renderLink = (link: { label: string; href: string }, mobile = false) => {
+    const baseClass = mobile
+      ? "font-body font-medium text-[16px] text-white cursor-pointer"
+      : `font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors duration-150 relative cursor-pointer ${isActive(link.href) ? "text-white" : ""}`;
+
+    if (link.href.startsWith("/#")) {
+      if (location.pathname === "/") {
+        return (
+          <a
+            key={link.label}
+            href={link.href.replace("/", "")}
+            onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+            className={baseClass}
+          >
+            {link.label}
+            {!mobile && (
+              <span
+                className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-white transition-transform duration-200 origin-left"
+                style={{ transform: "scaleX(0)" }}
+              />
+            )}
+          </a>
+        );
+      }
+      return (
+        <Link key={link.label} to={link.href} className={baseClass}>
+          {link.label}
+        </Link>
+      );
+    }
+
+    return (
+      <Link
+        key={link.label}
+        to={link.href}
+        onClick={() => setMobileOpen(false)}
+        className={baseClass}
+      >
+        {link.label}
+        {!mobile && (
+          <span
+            className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-white transition-transform duration-200 origin-left"
+            style={{ transform: isActive(link.href) ? "scaleX(1)" : "scaleX(0)" }}
+          />
+        )}
+      </Link>
+    );
   };
 
   return (
@@ -43,53 +85,30 @@ const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-      className="fixed top-0 left-0 right-0 z-[1000] h-[72px] flex items-center"
-      style={{ backgroundColor: "#0C6038" }}
+      className="fixed top-0 left-0 right-0 z-[1000] h-[72px] flex items-center bg-primary"
       role="navigation"
       aria-label="Main navigation"
     >
       <div className="w-full max-w-[1200px] mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-heading text-[22px] text-white tracking-tight">
+        <Link to="/" className="font-heading text-[22px] text-white tracking-tight">
           Reachquix
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
-              className={`font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors duration-150 relative cursor-pointer ${
-                activeSection === link.href.replace("#", "") ? "text-white after:scale-x-100" : ""
-              }`}
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              {link.label}
-              <span
-                className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-white transition-transform duration-200 origin-left"
-                style={{
-                  transform: activeSection === link.href.replace("#", "") ? "scaleX(1)" : "scaleX(0)",
-                }}
-              />
-            </a>
-          ))}
+          {navLinks.map((link) => renderLink(link))}
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="#" className="font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors cursor-pointer">
+          <Link to="/login" className="font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors cursor-pointer">
             Login
-          </a>
-          <a
-            href="#cta"
-            onClick={(e) => { e.preventDefault(); handleClick("#cta"); }}
-            className="font-body font-medium text-[15px] px-6 py-2.5 rounded-lg cursor-pointer transition-all duration-200 hover:bg-reachquix-light-green/90"
-            style={{ backgroundColor: "white", color: "#0C6038" }}
+          </Link>
+          <Link
+            to="/signup"
+            className="font-body font-medium text-[15px] px-6 py-2.5 rounded-lg cursor-pointer transition-all duration-200 bg-white text-primary hover:bg-white/90"
           >
             Get Started Free
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger */}
@@ -108,28 +127,17 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="absolute top-[72px] left-0 right-0 flex flex-col items-center gap-6 py-8 lg:hidden"
-          style={{ backgroundColor: "#0C6038" }}
+          className="absolute top-[72px] left-0 right-0 flex flex-col items-center gap-6 py-8 lg:hidden bg-primary"
         >
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
-              className="font-body font-medium text-[16px] text-white cursor-pointer"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a href="#" className="font-body font-medium text-[16px] text-white/90 cursor-pointer">Login</a>
-          <a
-            href="#cta"
-            onClick={(e) => { e.preventDefault(); handleClick("#cta"); }}
-            className="font-body font-medium text-[15px] px-8 py-3 rounded-lg cursor-pointer w-[calc(100%-48px)] text-center"
-            style={{ backgroundColor: "white", color: "#0C6038" }}
+          {navLinks.map((link) => renderLink(link, true))}
+          <Link to="/login" onClick={() => setMobileOpen(false)} className="font-body font-medium text-[16px] text-white/90 cursor-pointer">Login</Link>
+          <Link
+            to="/signup"
+            onClick={() => setMobileOpen(false)}
+            className="font-body font-medium text-[15px] px-8 py-3 rounded-lg cursor-pointer w-[calc(100%-48px)] text-center bg-white text-primary"
           >
             Get Started Free
-          </a>
+          </Link>
         </motion.div>
       )}
     </motion.nav>
