@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { MessageCircle, X, Send } from "lucide-react";
+import { Bot, X, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -67,7 +67,6 @@ const EvaChatbot = () => {
       setMessages((prev) => [...prev, evaMsg]);
     }, 600);
 
-    // Log conversation
     await supabase.from("eva_conversations").insert({
       session_id: sessionId,
       visitor_message: text,
@@ -77,7 +76,6 @@ const EvaChatbot = () => {
 
   return (
     <>
-      {/* Trigger button */}
       {!isOpen && (
         <button
           onClick={handleOpen}
@@ -86,14 +84,12 @@ const EvaChatbot = () => {
           title={t("eva.tooltip")}
           aria-label={t("eva.tooltip")}
         >
-          <MessageCircle size={24} />
+          <Bot size={24} />
         </button>
       )}
 
-      {/* Chat window */}
       {isOpen && (
         <div className="fixed bottom-6 right-6 z-[9999] w-[380px] h-[520px] max-sm:w-screen max-sm:h-screen max-sm:bottom-0 max-sm:right-0 max-sm:rounded-none rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-border bg-background">
-          {/* Header */}
           <div className="bg-primary px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               <span className="font-heading text-lg text-primary-foreground">{t("eva.title")}</span>
@@ -102,47 +98,21 @@ const EvaChatbot = () => {
                 {t("eva.online")}
               </span>
             </div>
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-primary-foreground/80 hover:text-primary-foreground cursor-pointer p-1"
-              aria-label="Close chat"
-            >
+            <button onClick={() => setIsOpen(false)} className="text-primary-foreground/80 hover:text-primary-foreground cursor-pointer p-1" aria-label="Close chat">
               <X size={20} />
             </button>
           </div>
-
-          {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-3">
             {messages.map((msg) => (
-              <div
-                key={msg.id}
-                className={`max-w-[80%] rounded-xl px-4 py-2.5 text-sm font-body ${
-                  msg.sender === "eva"
-                    ? "bg-muted text-foreground self-start"
-                    : "bg-primary text-primary-foreground self-end ms-auto"
-                }`}
-              >
+              <div key={msg.id} className={`max-w-[80%] rounded-xl px-4 py-2.5 text-sm font-body ${msg.sender === "eva" ? "bg-muted text-foreground self-start" : "bg-primary text-primary-foreground self-end ms-auto"}`}>
                 {msg.text}
               </div>
             ))}
             <div ref={messagesEndRef} />
           </div>
-
-          {/* Input */}
           <div className="border-t border-border p-3 flex gap-2 shrink-0">
-            <input
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleSend()}
-              placeholder={t("eva.placeholder")}
-              className="flex-1 rounded-lg border border-input bg-background px-3 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <button
-              onClick={handleSend}
-              disabled={!input.trim()}
-              className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 transition-colors"
-              aria-label="Send message"
-            >
+            <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSend()} placeholder={t("eva.placeholder")} className="flex-1 rounded-lg border border-input bg-background px-3 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring" />
+            <button onClick={handleSend} disabled={!input.trim()} className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 transition-colors" aria-label="Send message">
               <Send size={18} />
             </button>
           </div>
