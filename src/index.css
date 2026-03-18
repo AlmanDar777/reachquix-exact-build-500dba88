@@ -113,6 +113,13 @@
   outline-offset: 2px;
 }
 
+/* Float animation for hero dashboard */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
 /* No horizontal scroll */
 html, body {
   overflow-x: hidden;
