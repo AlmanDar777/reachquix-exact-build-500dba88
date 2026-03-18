@@ -1,19 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-
-const navLinks = [
-  { label: "Features", href: "/features" },
-  { label: "CRM", href: "/#crm" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Blog", href: "/blog" },
-  { label: "About", href: "/about" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { label: t("nav.features"), href: "/features" },
+    { label: t("nav.crm"), href: "/#crm" },
+    { label: t("nav.pricing"), href: "/pricing" },
+    { label: t("nav.blog"), href: "/blog" },
+    { label: t("nav.about"), href: "/about" },
+  ];
 
   const handleClick = (href: string) => {
     setMobileOpen(false);
@@ -33,8 +36,8 @@ const Navbar = () => {
 
   const renderLink = (link: { label: string; href: string }, mobile = false) => {
     const baseClass = mobile
-      ? "font-body font-medium text-[16px] text-white cursor-pointer"
-      : `font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors duration-150 relative cursor-pointer ${isActive(link.href) ? "text-white" : ""}`;
+      ? "font-body font-medium text-[16px] text-primary-foreground cursor-pointer"
+      : `font-body font-medium text-[15px] text-primary-foreground/90 hover:text-primary-foreground transition-colors duration-150 relative cursor-pointer ${isActive(link.href) ? "text-primary-foreground" : ""}`;
 
     if (link.href.startsWith("/#")) {
       if (location.pathname === "/") {
@@ -46,12 +49,6 @@ const Navbar = () => {
             className={baseClass}
           >
             {link.label}
-            {!mobile && (
-              <span
-                className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-white transition-transform duration-200 origin-left"
-                style={{ transform: "scaleX(0)" }}
-              />
-            )}
           </a>
         );
       }
@@ -72,7 +69,7 @@ const Navbar = () => {
         {link.label}
         {!mobile && (
           <span
-            className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-white transition-transform duration-200 origin-left"
+            className="absolute bottom-[-4px] left-0 w-full h-[2px] bg-primary-foreground transition-transform duration-200 origin-left"
             style={{ transform: isActive(link.href) ? "scaleX(1)" : "scaleX(0)" }}
           />
         )}
@@ -90,7 +87,7 @@ const Navbar = () => {
       aria-label="Main navigation"
     >
       <div className="w-full max-w-[1200px] mx-auto px-6 flex items-center justify-between">
-        <Link to="/" className="font-heading text-[22px] text-white tracking-tight">
+        <Link to="/" className="font-heading text-[22px] text-primary-foreground tracking-tight">
           Reachquix
         </Link>
 
@@ -100,20 +97,21 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <Link to="/login" className="font-body font-medium text-[15px] text-white/90 hover:text-white transition-colors cursor-pointer">
-            Login
+          <LanguageSwitcher />
+          <Link to="/login" className="font-body font-medium text-[15px] text-primary-foreground/90 hover:text-primary-foreground transition-colors cursor-pointer">
+            {t("nav.login")}
           </Link>
           <Link
             to="/signup"
-            className="font-body font-medium text-[15px] px-6 py-2.5 rounded-lg cursor-pointer transition-all duration-200 bg-white text-primary hover:bg-white/90"
+            className="font-body font-medium text-[15px] px-6 py-2.5 rounded-lg cursor-pointer transition-all duration-200 bg-primary-foreground text-primary hover:bg-primary-foreground/90"
           >
-            Get Started Free
+            {t("nav.getStarted")}
           </Link>
         </div>
 
         {/* Mobile hamburger */}
         <button
-          className="lg:hidden text-white p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
+          className="lg:hidden text-primary-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -129,14 +127,15 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="absolute top-[72px] left-0 right-0 flex flex-col items-center gap-6 py-8 lg:hidden bg-primary"
         >
+          <LanguageSwitcher mobile />
           {navLinks.map((link) => renderLink(link, true))}
-          <Link to="/login" onClick={() => setMobileOpen(false)} className="font-body font-medium text-[16px] text-white/90 cursor-pointer">Login</Link>
+          <Link to="/login" onClick={() => setMobileOpen(false)} className="font-body font-medium text-[16px] text-primary-foreground/90 cursor-pointer">{t("nav.login")}</Link>
           <Link
             to="/signup"
             onClick={() => setMobileOpen(false)}
-            className="font-body font-medium text-[15px] px-8 py-3 rounded-lg cursor-pointer w-[calc(100%-48px)] text-center bg-white text-primary"
+            className="font-body font-medium text-[15px] px-8 py-3 rounded-lg cursor-pointer w-[calc(100%-48px)] text-center bg-primary-foreground text-primary"
           >
-            Get Started Free
+            {t("nav.getStarted")}
           </Link>
         </motion.div>
       )}

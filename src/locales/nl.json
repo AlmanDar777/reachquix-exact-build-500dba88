@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "features": "Functies",
+    "crm": "CRM",
+    "pricing": "Prijzen",
+    "blog": "Blog",
+    "about": "Over ons",
+    "login": "Inloggen",
+    "getStarted": "Gratis Starten"
+  },
+  "hero": {
+    "badge": "AI-aangedreven verkoopplatform",
+    "title": "Koude outreach die echt antwoorden krijgt.",
+    "subtitle": "Reachquix combineert AI-aangedreven e-mailsequenties met een ingebouwde CRM — zodat je team slimmer kan versturen, sneller opvolgen en meer deals sluiten.",
+    "cta": "Gratis Starten",
+    "secondary": "Demo Bekijken",
+    "trust1": "Geen creditcard nodig",
+    "trust2": "14 dagen gratis proberen",
+    "trust3": "Op elk moment opzeggen"
+  },
+  "stats": {
+    "emails": "E-mails Verzonden",
+    "replies": "Antwoordpercentage",
+    "users": "Actieve Gebruikers",
+    "countries": "Landen"
+  },
+  "howItWorks": {
+    "title": "Hoe Het Werkt",
+    "subtitle": "Begin in 4 eenvoudige stappen",
+    "step1": "Contacten Importeren",
+    "step1desc": "Synchroniseer je Google Sheets of upload een CSV-bestand",
+    "step2": "Sjablonen Maken",
+    "step2desc": "Gebruik AI om gepersonaliseerde e-mailsequenties te schrijven",
+    "step3": "Campagne Lanceren",
+    "step3desc": "Stel je schema in en laat Reachquix het werk doen",
+    "step4": "Volgen & Sluiten",
+    "step4desc": "Monitor antwoorden en beheer deals in het CRM"
+  },
+  "features": {
+    "title": "Alle functies die je nodig hebt om meer deals te sluiten.",
+    "subtitle": "Reachquix geeft je verkoopteam de complete toolkit — e-mailautomatisering, CRM, Google Sheets sync, AI-schrijven en meer — alles in één platform.",
+    "emailTitle": "E-mailautomatisering Functies",
+    "crmTitle": "CRM Functies"
+  },
+  "pricing": {
+    "title": "Eenvoudige prijzen. Geen verrassingen.",
+    "subtitle": "Begin gratis. Schaal terwijl je groeit. Opzeggen wanneer je wilt.",
+    "monthly": "Maandelijks",
+    "annual": "Jaarlijks (20% korting)",
+    "starter": "Starter",
+    "growth": "Groei",
+    "agency": "Bureau",
+    "popular": "Meest Populair",
+    "perMonth": "/maand",
+    "getStarted": "Aan de Slag",
+    "startTrial": "Gratis Proef Starten"
+  },
+  "about": {
+    "title": "Gebouwd door mensen die jouw markt begrijpen.",
+    "subtitle": "Wij zijn geen Silicon Valley startup. Wij zijn een team gevestigd in Dubai, VAE — en we bouwden Reachquix omdat we geen enkel outreach-tool konden vinden dat echt werkte voor de Golfmarkt.",
+    "mission": "Onze Missie",
+    "missionText": "Elk bedrijf in de VAE en MENA-regio toegang geven tot dezelfde krachtige outreach-tools die Fortune 500-bedrijven gebruiken. Zonder het Fortune 500-prijskaartje."
+  },
+  "contact": {
+    "title": "We horen graag van je.",
+    "subtitle": "Of je nu een vraag hebt, hulp nodig hebt, of gewoon hallo wilt zeggen — ons team is er en reageert snel.",
+    "name": "Volledige Naam",
+    "email": "E-mailadres",
+    "company": "Bedrijfsnaam",
+    "subject": "Onderwerp",
+    "message": "Bericht",
+    "send": "Bericht Versturen",
+    "success": "Bedankt! We hebben je bericht ontvangen en antwoorden binnen 24 uur."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Inzichten, tips en strategieën voor verkoopsucces.",
+    "readMore": "Lees Meer →",
+    "all": "Alles"
+  },
+  "footer": {
+    "rights": "Alle rechten voorbehouden.",
+    "registered": "Geregistreerd in de Republiek Estland, Europese Unie.",
+    "product": "Product",
+    "company": "Bedrijf",
+    "legal": "Juridisch",
+    "privacy": "Privacybeleid",
+    "terms": "Servicevoorwaarden"
+  },
+  "cta": {
+    "getstarted": "Gratis Starten →",
+    "seePricing": "Prijzen Bekijken"
+  },
+  "eva": {
+    "welcome": "Hoi! Ik ben Eva, uw Reachquix-assistent. Ik kan u helpen met vragen over ons platform, prijzen, functies en aan de slag gaan. Wat wilt u weten?",
+    "placeholder": "Typ uw bericht...",
+    "title": "Eva",
+    "online": "Online",
+    "fallback": "Goede vraag! Laat me u verbinden met ons team. Stuur ons een e-mail op support@reachquix.com of laat uw e-mail achter en we nemen binnen enkele uren contact met u op.",
+    "tooltip": "Chat met Eva"
+  },
+  "login": {
+    "title": "Outreach op de automatische piloot. Groei op aanvraag.",
+    "email": "E-mailadres",
+    "password": "Wachtwoord",
+    "remember": "Onthoud mij",
+    "forgot": "Wachtwoord vergeten?",
+    "submit": "Inloggen",
+    "google": "Doorgaan met Google",
+    "noAccount": "Geen account?",
+    "signupLink": "Gratis aanmelden →",
+    "error": "Ongeldig e-mailadres of wachtwoord. Probeer het opnieuw."
+  },
+  "signup": {
+    "title": "Begin vandaag met meer deals sluiten.",
+    "benefits": ["14 dagen gratis proberen op Groei-plan", "Geen creditcard nodig", "Setup in minder dan 5 minuten", "Google Sheets in seconden verbonden", "Op elk moment opzeggen — geen vragen"],
+    "name": "Volledige Naam",
+    "email": "Werk E-mail",
+    "password": "Wachtwoord",
+    "company": "Bedrijfsnaam",
+    "phone": "Telefoonnummer",
+    "plan": "Plan Selecteren",
+    "submit": "Gratis Account Aanmaken →",
+    "google": "Aanmelden met Google",
+    "terms": "Door een account aan te maken ga je akkoord met onze Servicevoorwaarden en Privacybeleid.",
+    "hasAccount": "Al een account?",
+    "loginLink": "Inloggen →"
+  }
+}
