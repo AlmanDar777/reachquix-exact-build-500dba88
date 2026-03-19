@@ -111,19 +111,19 @@
   "aiFeatures": {
     "label": "ARTIFICIAL INTELLIGENCE",
     "title": "Not just automation. Actual intelligence.",
-    "subtitle": "Reachquix uses AI at every step of your outreach — from writing your emails to analyzing replies to telling you the perfect time to send. This is not a chatbot. This is AI that actually closes deals.",
+    "subtitle": "Reachquix uses AI at every step of your global outreach — writing emails, analyzing replies, optimizing send times, checking spam scores, and enriching leads — in any language, for any market.",
     "f1Title": "AI Reply Analyzer",
-    "f1Desc": "When a contact replies, AI reads it instantly and tells you if they are Interested, Not Interested, or Out of Office — then drafts the perfect response for you to send with one click.",
+    "f1Desc": "When any contact anywhere replies, AI reads it instantly. Classifies as Interested, Not Interested, or Out of Office. Gives sentiment score. Drafts the perfect response for you to send with one click.",
     "f2Title": "AI Icebreaker Generator",
-    "f2Desc": "Generate a unique personalized opening line for every single contact. Make 10,000 emails feel hand-written. This one feature alone increases reply rates by up to 3x.",
+    "f2Desc": "Generate a unique personalized opening line for every single contact based on their company, industry, and location. Make 10,000 emails feel hand-written. Increases reply rates by up to 3x.",
     "f3Title": "AI Spam Score Checker",
-    "f3Desc": "Before you send to 10,000 people, AI checks your email for spam triggers, scores it out of 100, and suggests specific fixes to maximize deliverability.",
+    "f3Desc": "Before sending to thousands of contacts, AI scans your email, scores it out of 100, highlights spam trigger words in red, and gives specific fixes to maximize inbox placement globally.",
     "f4Title": "AI Send Time Optimizer",
-    "f4Desc": "AI analyzes when each contact historically opens emails and automatically schedules your sends at the exact time they are most likely to open. No more guessing.",
+    "f4Desc": "AI analyzes when each contact opens emails and schedules your sends at the optimal time in their timezone. Global precision — zero guesswork.",
     "f5Title": "AI Sequence Builder",
-    "f5Desc": "Describe your target audience and goal in plain English. AI builds your entire multi-step email sequence — subject lines, body copy, follow-ups — in seconds.",
-    "f6Title": "Arabic AI Writer",
-    "f6Desc": "Write cold emails in perfect Arabic with Gulf business culture and etiquette built in. The only outreach tool that truly understands the MENA market. Zero competition."
+    "f5Desc": "Describe your target audience and goal in plain English. AI builds your entire multi-step sequence — subject lines, body copy, follow-ups — in any language, in seconds.",
+    "f6Title": "AI Lead Enrichment",
+    "f6Desc": "Paste a company name. AI fills in job title, company size, industry, location, and key pain points in seconds. Save hours of research before reaching out to any prospect in any country."
   },
   "whyReachquix": {
     "label": "WHY REACHQUIX",
