@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Users, Sheet } from "lucide-react";
+import { Mail, Users, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const PlatformOverview = () => {
