@@ -6,16 +6,16 @@
     "blog": "Blog",
     "about": "About",
     "login": "Login",
-    "getStarted": "Get Started Free"
+    "getStarted": "Start Closing Deals →"
   },
   "hero": {
     "label": "ALL-IN-ONE SALES OUTREACH PLATFORM",
     "title": "Send. Follow Up. Close.",
     "titleLine2": "All on Autopilot.",
     "subtitle": "Reachquix is the all-in-one outreach platform that sends your cold emails, follows up at exactly the right time, detects every reply instantly, and manages your leads in a built-in CRM — so you can stop chasing and start closing.",
-    "cta": "Get Started Free →",
-    "demo": "Watch Demo",
-    "noCreditCard": "No credit card required",
+    "cta": "Start Closing Deals — It's Free →",
+    "demo": "See It In Action ▶",
+    "trustLine": "✓ Zero setup fees  ✓ Live in 5 minutes  ✓ No contracts ever",
     "euRegistered": "Registered in the Republic of Estonia, European Union",
     "dashboardTitle": "Active Campaigns",
     "dashboardRunning": "3 Running",
@@ -35,9 +35,9 @@
     "row3Status": "Hot Lead"
   },
   "stats": {
-    "emailsSent": "Emails Sent Daily",
-    "leadsManaged": "Leads Managed",
-    "replyRate": "Average Reply Detection Rate"
+    "emailsSent": "Emails Delivered Daily",
+    "leadsManaged": "Active Leads Managed",
+    "replyRate": "Sequences Running Right Now"
   },
   "logoBar": {
     "trusted": "Trusted by businesses across UAE, Saudi Arabia, Egypt and beyond"
@@ -51,7 +51,8 @@
     "crmTitle": "Built-in CRM",
     "crmDesc": "Every lead, every conversation, every deal — organized in one place. Track your entire pipeline from first email to signed contract without ever switching apps or losing track of who said what.",
     "sheetsTitle": "Live Google Sheets Sync",
-    "sheetsDesc": "The only outreach tool that connects directly to your Google Sheet — live. No CSV exports. No manual uploads. Contacts sync in, replies sync out, and your sheet stays up to date automatically."
+    "sheetsDesc": "The only outreach tool that connects directly to your Google Sheet — live. No CSV exports. No manual uploads. Contacts sync in, replies sync out, and your sheet stays up to date automatically.",
+    "learnMore": "Show me how →"
   },
   "howItWorks": {
     "label": "HOW IT WORKS",
@@ -68,12 +69,14 @@
     "step3Mockup": "Campaign Dashboard",
     "step4Title": "Manage & Close",
     "step4Desc": "Every reply lands directly in your built-in CRM with the full conversation attached. Move leads through your pipeline, add notes, set follow-up reminders, assign to team members, and close deals — all without ever leaving Reachquix.",
-    "step4Mockup": "Sales Pipeline"
+    "step4Mockup": "Sales Pipeline",
+    "bottomCta": "I'm Ready — Start My Free Account →"
   },
   "emailFeatures": {
     "label": "EMAIL AUTOMATION",
     "title": "Outreach that works while you sleep",
     "subtitle": "Set up your sequences once. Reachquix runs your entire outreach operation on autopilot — 24 hours a day, 7 days a week, 365 days a year. No babysitting required.",
+    "cta": "Stop Sending Manually. Start Automating. →",
     "f1Title": "Smart Multi-Step Sequences",
     "f1Desc": "Send up to 10 perfectly timed follow-up emails to every contact. Each email only sends if the contact has not replied yet — so you never look desperate, never double-email anyone, and always follow up at exactly the right moment.",
     "f2Title": "Instant Reply Detection",
@@ -91,6 +94,7 @@
     "label": "BUILT-IN CRM",
     "title": "Stop losing leads. Start closing deals.",
     "subtitle": "Most businesses lose 40% of their leads simply by not following up properly. Reachquix gives you a full CRM purpose-built for outreach — so every lead is tracked, every deal is moving, and nothing falls through the cracks.",
+    "cta": "See Every Lead. Close Every Deal. →",
     "f1Title": "Complete Contact Management",
     "f1Desc": "Every lead lives in one organized place. See the complete history — every email sent, every reply received, every note added, every call logged. No more digging through inboxes or spreadsheets trying to remember where you left off.",
     "f2Title": "Visual Drag-and-Drop Pipeline",
@@ -108,6 +112,7 @@
     "label": "WHY REACHQUIX",
     "title": "Built different. Built for you.",
     "subtitle": "Every other email tool was built by Americans, for Americans, priced for Silicon Valley. We built Reachquix for businesses in the UAE, MENA, and the Gulf — where deals are bigger, relationships matter more, and nobody has time to learn complicated software.",
+    "cta": "Switch to Reachquix Today — Free →",
     "comparisonIntro": "See exactly what you get with Reachquix vs the competition:",
     "featureCol": "Feature",
     "f1": "Google Sheets live sync",
@@ -134,7 +139,7 @@
     "annual": "Annual (20% off)",
     "popular": "Most Popular",
     "perMonth": "/ month",
-    "notSure": "Not sure which plan is right for you?",
+    "notSure": "Still deciding? Chat with Eva — she knows everything about our plans.",
     "talkToTeam": "Talk to our team →",
     "starter": "Starter",
     "starterSub": "Perfect for solo founders, freelancers and real estate agents ready to automate their outreach.",
@@ -142,9 +147,9 @@
     "growthSub": "For growing agencies and sales teams that need more power and no limits.",
     "agency": "Agency",
     "agencySub": "For agencies managing outreach for multiple clients who need full control and white-label options.",
-    "starterCta": "Start for Free",
-    "growthCta": "Start Free Trial",
-    "agencyCta": "Contact Us",
+    "starterCta": "Start Free — No Card Needed",
+    "growthCta": "Claim My 14-Day Free Trial →",
+    "agencyCta": "Let's Talk →",
     "starterNote": "No credit card required",
     "growthNote": "14-day free trial — no credit card needed",
     "starterF1": "Up to 5,000 contacts",
@@ -180,6 +185,7 @@
   "testimonials": {
     "label": "LOVED BY BUSINESSES ACROSS THE GULF",
     "title": "Real businesses. Real results.",
+    "cta": "Join them — Start Free Today →",
     "t1Quote": "We were manually chasing 500 leads every single week. It was exhausting and nothing was getting done consistently. Reachquix automated everything overnight. Our reply rate tripled in the first 30 days and we saved 20+ hours every week.",
     "t1Name": "Ahmed Al Mansoori",
     "t1Title": "Director, Real Estate Agency — Dubai, UAE",
@@ -193,6 +199,7 @@
   "trust": {
     "label": "BUILT WITH TRUST",
     "title": "Enterprise-grade security. Startup-friendly price.",
+    "cta": "Your Data. Your Server. Your Rules. Start Free →",
     "c1Title": "Registered in the European Union",
     "c1Desc": "Reachquix is proudly registered as Reachquix OÜ in the Republic of Estonia, European Union. You get the legal security, data protection, and international credibility of a fully regulated European company — at a price made for real businesses.",
     "c2Title": "Your Data Stays Yours",
@@ -203,14 +210,14 @@
     "c4Desc": "Your campaigns never sleep and neither does Reachquix. Built on enterprise-grade infrastructure with automatic failover. Whether it is 3am Friday or 8am Monday — your sequences are running, your replies are being detected, and your leads are being managed."
   },
   "finalCta": {
-    "title": "Your next client is one email away.",
-    "subtitle": "Join businesses across the UAE and MENA region already using Reachquix to automate their outreach, manage their leads, and close more deals — every single day. No complicated setup. No technical skills needed. Just results.",
-    "cta": "Get Started Free →",
-    "demo": "Book a Demo",
-    "note": "Free trial — no credit card needed. Setup in under 5 minutes. Cancel anytime. EU Registered"
+    "title": "Your next client is already in your contact list. Go get them.",
+    "subtitle": "Stop leaving money on the table. Reachquix turns your cold contacts into warm conversations — automatically, every single day, while you sleep.",
+    "cta": "Activate My Free Account →",
+    "demo": "Book a 15-Minute Demo",
+    "note": "✓ No credit card  ✓ Live in 5 minutes  ✓ Cancel with one click  🇪🇪 EU Registered & GDPR Compliant"
   },
   "footer": {
-    "tagline": "Outreach on autopilot. Growth on demand.",
+    "tagline": "The outreach platform that closes deals while you sleep.",
     "product": "Product",
     "company": "Company",
     "resources": "Resources",
@@ -249,8 +256,8 @@
     "available": "Available",
     "comingSoon": "Coming Soon",
     "everythingTitle": "Everything Included",
-    "trialCta": "Start your free trial today.",
-    "getStarted": "Get Started Free →",
+    "trialCta": "I Want All of This — Start Free →",
+    "getStarted": "I Want All of This — Start Free →",
     "seePricing": "See Pricing"
   },
   "pricingPage": {
@@ -304,7 +311,7 @@
     "euDesc": "Reachquix OÜ is proudly registered in the Republic of Estonia, European Union — giving you the security and credibility of a fully regulated European company.",
     "euLocation": "Operations: Dubai, UAE · Registered Office: Tallinn, Estonia",
     "ctaTitle": "Ready to grow your business?",
-    "getStarted": "Get Started Free →",
+    "getStarted": "Be Part of the Story — Start Free →",
     "contactUs": "Contact Us"
   },
   "contact": {
@@ -315,7 +322,7 @@
     "company": "Company Name",
     "subject": "Subject",
     "message": "Message",
-    "send": "Send Message →",
+    "send": "Send My Message →",
     "namePlaceholder": "Your full name",
     "emailPlaceholder": "you@company.com",
     "companyPlaceholder": "Your company",
@@ -346,7 +353,8 @@
     "subtitle": "Insights, tips, and strategies for sales outreach.",
     "readMore": "Read More",
     "all": "All",
-    "noPostsYet": "No blog posts yet. Check back soon!"
+    "noPostsYet": "No blog posts yet. Check back soon!",
+    "cta": "Want results like these? Start free today →"
   },
   "login": {
     "panelTitle": "Outreach on autopilot.\nGrowth on demand.",
@@ -361,10 +369,12 @@
     "passwordPlaceholder": "••••••••",
     "remember": "Remember me",
     "forgot": "Forgot password?",
-    "submit": "Log In",
+    "submit": "Take Me to My Dashboard →",
     "google": "Continue with Google",
     "noAccount": "Don't have an account?",
-    "signupLink": "Sign up free →"
+    "signupLink": "Sign up free →",
+    "or": "or",
+    "and": "and"
   },
   "signup": {
     "panelTitle": "Start closing more deals today.",
@@ -379,7 +389,7 @@
     "company": "Company Name",
     "phone": "Phone Number",
     "plan": "Select Plan",
-    "submit": "Create Free Account →",
+    "submit": "Create My Free Account — Takes 2 Minutes →",
     "google": "Sign up with Google",
     "terms": "By creating an account you agree to our",
     "termsLink": "Terms of Service",
