@@ -9,229 +9,227 @@ const HeroDashboard = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
-      className="relative w-full max-w-[520px] mx-auto"
-      style={{ animation: "float 3s ease-in-out infinite" }}
+      className="relative w-full max-w-[440px] mx-auto"
+      style={{ padding: "40px 30px 50px 20px" }}
     >
       {/* Layer 1 — Main browser window */}
-      <div className="rounded-xl border border-white/20 bg-white/95 backdrop-blur-sm shadow-2xl overflow-hidden">
+      <div className="relative z-[10] rounded-xl border border-white/20 bg-white/95 backdrop-blur-sm shadow-2xl overflow-hidden" style={{ animation: "float 3s ease-in-out infinite" }}>
         {/* Browser chrome */}
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#F1F5F9] border-b border-border">
-          <div className="w-3 h-3 rounded-full bg-red-400" />
-          <div className="w-3 h-3 rounded-full bg-yellow-400" />
-          <div className="w-3 h-3 rounded-full bg-green-400" />
-          <div className="ml-3 flex-1 h-6 rounded bg-white flex items-center px-3">
-            <span className="font-body text-[11px] text-muted-foreground">app.reachquix.com/campaigns</span>
+        <div className="flex items-center gap-2 px-3 py-2 bg-[#F1F5F9] border-b border-border">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+          <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+          <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+          <div className="ml-2 flex-1 h-5 rounded bg-white flex items-center px-2">
+            <span className="font-body text-[10px] text-muted-foreground">app.reachquix.com/campaigns</span>
           </div>
         </div>
 
         <div className="flex">
           {/* Sidebar */}
-          <div className="w-12 bg-[#F8FAFC] border-r border-border py-3 flex flex-col items-center gap-3">
-            <Home size={16} className="text-muted-foreground" />
-            <Users size={16} className="text-muted-foreground" />
-            <Send size={16} style={{ color: "#0C6038" }} />
-            <Zap size={16} className="text-muted-foreground" />
-            <BarChart3 size={16} className="text-muted-foreground" />
+          <div className="w-10 bg-[#F8FAFC] border-r border-border py-2.5 flex flex-col items-center gap-2.5">
+            <Home size={14} className="text-muted-foreground" />
+            <Users size={14} className="text-muted-foreground" />
+            <Send size={14} style={{ color: "#0C6038" }} />
+            <Zap size={14} className="text-muted-foreground" />
+            <BarChart3 size={14} className="text-muted-foreground" />
           </div>
 
           {/* Main content */}
-          <div className="flex-1 p-4">
-            <div className="flex items-center justify-between mb-3">
-              <span className="font-heading text-[14px] text-secondary">{t("hero.dashboardTitle")}</span>
-              <span className="font-body text-[11px] px-2 py-0.5 rounded-full text-white font-medium" style={{ backgroundColor: "#0C6038" }}>{t("hero.dashboardRunning")}</span>
+          <div className="flex-1 p-3">
+            <div className="flex items-center justify-between mb-2">
+              <span className="font-heading text-[12px] text-secondary">{t("hero.dashboardTitle")}</span>
+              <span className="font-body text-[9px] px-1.5 py-0.5 rounded-full text-white font-medium" style={{ backgroundColor: "#0C6038" }}>{t("hero.dashboardRunning")}</span>
             </div>
 
-            {/* Contact rows */}
-            <div className="space-y-2">
-              <div className="flex items-center gap-2.5 p-2 rounded-lg bg-[#F8FAFC] border border-border">
-                <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
-                  <span className="font-heading text-[11px]" style={{ color: "#0C6038" }}>A</span>
+            <div className="space-y-1.5">
+              <div className="flex items-center gap-2 p-1.5 rounded-lg bg-[#F8FAFC] border border-border">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
+                  <span className="font-heading text-[10px]" style={{ color: "#0C6038" }}>A</span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-body text-[12px] font-medium text-secondary truncate">{t("hero.row1Name")}</p>
-                  <p className="font-body text-[10px] text-muted-foreground truncate">{t("hero.row1Subject")}</p>
+                  <p className="font-body text-[10px] font-medium text-secondary truncate">{t("hero.row1Name")}</p>
+                  <p className="font-body text-[8px] text-muted-foreground truncate">{t("hero.row1Subject")}</p>
                 </div>
-                <span className="font-body text-[10px] font-medium px-2 py-0.5 rounded-full text-white whitespace-nowrap" style={{ backgroundColor: "#0C6038" }}>{t("hero.row1Status")}</span>
+                <span className="font-body text-[8px] font-medium px-1.5 py-0.5 rounded-full text-white whitespace-nowrap" style={{ backgroundColor: "#0C6038" }}>{t("hero.row1Status")}</span>
               </div>
 
-              <div className="flex items-center gap-2.5 p-2 rounded-lg bg-[#F8FAFC] border border-border">
-                <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
-                  <span className="font-heading text-[11px]" style={{ color: "#0C6038" }}>S</span>
+              <div className="flex items-center gap-2 p-1.5 rounded-lg bg-[#F8FAFC] border border-border">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
+                  <span className="font-heading text-[10px]" style={{ color: "#0C6038" }}>S</span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-body text-[12px] font-medium text-secondary truncate">{t("hero.row2Name")}</p>
-                  <p className="font-body text-[10px] text-muted-foreground truncate">{t("hero.row2Subject")}</p>
+                  <p className="font-body text-[10px] font-medium text-secondary truncate">{t("hero.row2Name")}</p>
+                  <p className="font-body text-[8px] text-muted-foreground truncate">{t("hero.row2Subject")}</p>
                 </div>
-                <span className="font-body text-[10px] font-medium px-2 py-0.5 rounded-full bg-muted text-muted-foreground whitespace-nowrap">{t("hero.row2Status")}</span>
+                <span className="font-body text-[8px] font-medium px-1.5 py-0.5 rounded-full bg-muted text-muted-foreground whitespace-nowrap">{t("hero.row2Status")}</span>
               </div>
 
-              <div className="flex items-center gap-2.5 p-2 rounded-lg bg-[#F8FAFC] border border-border">
-                <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
-                  <span className="font-heading text-[11px]" style={{ color: "#0C6038" }}>R</span>
+              <div className="flex items-center gap-2 p-1.5 rounded-lg bg-[#F8FAFC] border border-border">
+                <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
+                  <span className="font-heading text-[10px]" style={{ color: "#0C6038" }}>R</span>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="font-body text-[12px] font-medium text-secondary truncate">{t("hero.row3Name")}</p>
-                  <p className="font-body text-[10px] text-muted-foreground truncate">{t("hero.row3Subject")}</p>
+                  <p className="font-body text-[10px] font-medium text-secondary truncate">{t("hero.row3Name")}</p>
+                  <p className="font-body text-[8px] text-muted-foreground truncate">{t("hero.row3Subject")}</p>
                 </div>
-                <span className="font-body text-[10px] font-medium px-2 py-0.5 rounded-full bg-orange-100 text-orange-700 whitespace-nowrap">{t("hero.row3Status")}</span>
+                <span className="font-body text-[8px] font-medium px-1.5 py-0.5 rounded-full bg-orange-100 text-orange-700 whitespace-nowrap">{t("hero.row3Status")}</span>
               </div>
             </div>
 
-            {/* Progress bar */}
-            <div className="mt-3">
-              <div className="flex justify-between mb-1">
-                <span className="font-body text-[10px] text-muted-foreground">{t("hero.deliveryRate")}</span>
-                <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>94%</span>
+            <div className="mt-2">
+              <div className="flex justify-between mb-0.5">
+                <span className="font-body text-[9px] text-muted-foreground">{t("hero.deliveryRate")}</span>
+                <span className="font-body text-[9px] font-medium" style={{ color: "#0C6038" }}>94%</span>
               </div>
-              <div className="w-full h-1.5 rounded-full bg-muted">
-                <div className="h-1.5 rounded-full" style={{ width: "94%", backgroundColor: "#0C6038" }} />
+              <div className="w-full h-1 rounded-full bg-muted">
+                <div className="h-1 rounded-full" style={{ width: "94%", backgroundColor: "#0C6038" }} />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Layer 2 — Floating notification card top right */}
+      {/* Card — Reply detected (top right) */}
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="absolute -top-4 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5 z-[20]"
-        style={{ animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}
+        className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border flex items-start gap-2 z-[20]"
+        style={{ top: "10px", right: "-10px", animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}
       >
-        <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
-          <Check size={14} style={{ color: "#0C6038" }} />
+        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
+          <Check size={12} style={{ color: "#0C6038" }} />
         </div>
         <div>
-          <p className="font-body text-[12px] font-semibold text-secondary">{t("hero.replyDetected")}</p>
-          <p className="font-body text-[10px] text-muted-foreground">{t("hero.movingToCRM")}</p>
+          <p className="font-body text-[11px] font-semibold text-secondary">{t("hero.replyDetected")}</p>
+          <p className="font-body text-[9px] text-muted-foreground">{t("hero.movingToCRM")}</p>
         </div>
       </motion.div>
 
-      {/* Layer 3 — Floating stats card bottom left */}
+      {/* Card — Campaign sent (bottom left) */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
-        className="absolute -bottom-4 left-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5 z-[20]"
-        style={{ animation: "float 3s ease-in-out 1s infinite" }}
+        className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border flex items-start gap-2 z-[20]"
+        style={{ bottom: "20px", left: "-10px", animation: "float 3s ease-in-out 1s infinite" }}
       >
-        <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
-          <Mail size={14} style={{ color: "#0C6038" }} />
+        <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
+          <Mail size={12} style={{ color: "#0C6038" }} />
         </div>
         <div>
-          <p className="font-body text-[12px] font-semibold text-secondary">{t("hero.campaignSent")}</p>
-          <p className="font-body text-[10px] text-muted-foreground">{t("hero.contactsReached")}</p>
+          <p className="font-body text-[11px] font-semibold text-secondary">{t("hero.campaignSent")}</p>
+          <p className="font-body text-[9px] text-muted-foreground">{t("hero.contactsReached")}</p>
         </div>
       </motion.div>
 
-      {/* Layer 4 — Floating metric card middle right (kept but hidden, replaced by revenue card) */}
+      {/* Card — Delivery Rate (mobile only) */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.4 }}
-        className="absolute top-1/2 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden z-[20]"
-        style={{ animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
+        className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border text-center md:hidden z-[20]"
+        style={{ top: "50%", right: "-5px", animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
       >
-        <p className="font-body text-[10px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
+        <p className="font-body text-[9px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
         <div className="flex items-center gap-1 justify-center">
-          <span className="font-heading text-[22px]" style={{ color: "#0C6038" }}>94%</span>
-          <ArrowUp size={14} style={{ color: "#0C6038" }} />
+          <span className="font-heading text-[20px]" style={{ color: "#0C6038" }}>94%</span>
+          <ArrowUp size={12} style={{ color: "#0C6038" }} />
         </div>
       </motion.div>
 
-      {/* NEW CARD 1 — Google Sheets Sync (top left) */}
+      {/* Card — Sheets Synced (top left overlap) */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1.6 }}
         className="hidden md:flex absolute z-[22] bg-white rounded-xl"
         style={{
-          top: "-15px",
-          left: "0px",
-          padding: "12px 16px",
-          width: "190px",
+          top: "5px",
+          left: "-15px",
+          padding: "8px 10px",
+          width: "160px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
           animation: "float 3.5s ease-in-out 0.5s infinite",
         }}
       >
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#0C6038" }}>
-            <Table size={16} className="text-white" />
+          <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#0C6038" }}>
+            <Table size={13} className="text-white" />
           </div>
           <div>
-            <p className="font-body text-[13px] font-semibold" style={{ color: "#0A0A0A" }}>Sheets Synced</p>
-            <p className="font-body text-[11px]" style={{ color: "#64748B" }}>1,247 contacts updated</p>
+            <p className="font-body text-[10px] font-semibold" style={{ color: "#0A0A0A" }}>Sheets Synced</p>
+            <p className="font-body text-[8px]" style={{ color: "#64748B" }}>1,247 contacts updated</p>
             <div className="flex items-center gap-1 mt-0.5">
               <span className="w-1.5 h-1.5 rounded-full inline-block" style={{ backgroundColor: "#0C6038", animation: "pulse-dot 1.5s ease-in-out infinite" }} />
-              <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Live sync active</span>
+              <span className="font-body text-[8px] font-medium" style={{ color: "#0C6038" }}>Live sync active</span>
             </div>
           </div>
         </div>
       </motion.div>
 
-      {/* NEW CARD 2 — Revenue Card (right middle) */}
+      {/* Card — Revenue (right side, upper) */}
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1.8 }}
         className="hidden md:block absolute z-[30] bg-white rounded-xl"
         style={{
-          right: "-10px",
-          top: "15%",
-          padding: "14px 18px",
-          width: "160px",
+          right: "-20px",
+          top: "85px",
+          padding: "8px 12px",
+          width: "130px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
           animation: "float 3.5s ease-in-out 1s infinite",
         }}
       >
-        <p className="font-body text-[11px]" style={{ color: "#64748B" }}>Revenue</p>
-        <p className="font-heading text-[26px] font-bold" style={{ color: "#0A0A0A" }}>$12,400</p>
+        <p className="font-body text-[9px]" style={{ color: "#64748B" }}>Revenue</p>
+        <p className="font-heading text-[20px] font-bold" style={{ color: "#0A0A0A" }}>$12,400</p>
         <div className="flex items-center gap-1">
-          <ArrowUp size={14} style={{ color: "#0C6038" }} />
-          <span className="font-body text-[11px] font-medium" style={{ color: "#0C6038" }}>+24% this month</span>
+          <ArrowUp size={10} style={{ color: "#0C6038" }} />
+          <span className="font-body text-[8px] font-medium" style={{ color: "#0C6038" }}>+24% this month</span>
         </div>
-        <div className="flex items-end gap-[3px] mt-2">
-          {[8, 12, 10, 16, 20].map((h, i) => (
-            <div key={i} className="w-3.5 rounded-sm" style={{ height: `${h}px`, backgroundColor: "#0C6038" }} />
+        <div className="flex items-end gap-[2px] mt-1">
+          {[6, 10, 8, 14, 18].map((h, i) => (
+            <div key={i} className="w-2.5 rounded-sm" style={{ height: `${h}px`, backgroundColor: "#0C6038" }} />
           ))}
         </div>
       </motion.div>
 
-      {/* NEW CARD 3 — AI Sequence Card (bottom right) */}
+      {/* Card — AI Sequence (bottom right, below Revenue) */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 2.0 }}
         className="hidden md:block absolute z-[25] bg-white rounded-xl"
         style={{
-          bottom: "-30px",
+          bottom: "-5px",
           right: "-10px",
-          padding: "12px 16px",
-          width: "220px",
+          padding: "8px 10px",
+          width: "175px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
           animation: "float 3.5s ease-in-out 1.5s infinite",
         }}
       >
-        <div className="flex items-center gap-2 mb-2">
-          <Bot size={16} style={{ color: "#0C6038" }} />
-          <span className="font-body text-[12px] font-semibold" style={{ color: "#0A0A0A" }}>AI Sequence Running</span>
+        <div className="flex items-center gap-1.5 mb-1">
+          <Bot size={12} style={{ color: "#0C6038" }} />
+          <span className="font-body text-[10px] font-semibold" style={{ color: "#0A0A0A" }}>AI Sequence Running</span>
         </div>
-        <div className="flex flex-col gap-1.5">
-          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#F0FDF4" }}>
-            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#0C6038" }} />
-            <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Email 1 — Sent ✓</span>
+        <div className="flex flex-col gap-1">
+          <div className="h-[18px] rounded-full flex items-center gap-1 px-2" style={{ backgroundColor: "#F0FDF4" }}>
+            <span className="w-1 h-1 rounded-full" style={{ backgroundColor: "#0C6038" }} />
+            <span className="font-body text-[8px] font-medium" style={{ color: "#0C6038" }}>Email 1 — Sent ✓</span>
           </div>
-          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#F0FDF4" }}>
-            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#0C6038" }} />
-            <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Follow-up — Sent ✓</span>
+          <div className="h-[18px] rounded-full flex items-center gap-1 px-2" style={{ backgroundColor: "#F0FDF4" }}>
+            <span className="w-1 h-1 rounded-full" style={{ backgroundColor: "#0C6038" }} />
+            <span className="font-body text-[8px] font-medium" style={{ color: "#0C6038" }}>Follow-up — Sent ✓</span>
           </div>
-          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#FEF3C7" }}>
-            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#D97706" }} />
-            <span className="font-body text-[10px] font-medium" style={{ color: "#D97706" }}>Day 7 — Scheduled ⏰</span>
+          <div className="h-[18px] rounded-full flex items-center gap-1 px-2" style={{ backgroundColor: "#FEF3C7" }}>
+            <span className="w-1 h-1 rounded-full" style={{ backgroundColor: "#D97706" }} />
+            <span className="font-body text-[8px] font-medium" style={{ color: "#D97706" }}>Day 7 — Scheduled ⏰</span>
           </div>
         </div>
-        <p className="font-body text-[10px] mt-1.5" style={{ color: "#94A3B8" }}>Next send in 2 days</p>
+        <p className="font-body text-[8px] mt-1" style={{ color: "#94A3B8" }}>Next send in 2 days</p>
       </motion.div>
     </motion.div>
   );
