@@ -240,9 +240,9 @@ const HeroDashboard = () => {
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section id="hero" className="pt-[72px] min-h-screen flex items-center bg-primary">
+    <section id="hero" className="pt-[72px] min-h-screen flex items-center bg-primary overflow-hidden">
       <div className="w-full max-w-[1200px] mx-auto px-6 py-20 md:py-24 lg:py-32">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12">
           <div className="flex-1">
             <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.05, ease: [0.4, 0, 0.2, 1] }} className="section-label mb-4" style={{ color: "rgba(255,255,255,0.8)" }}>
               {t("hero.label")}
