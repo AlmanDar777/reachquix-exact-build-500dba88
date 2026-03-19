@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Eye, Server, Sparkles, UserCheck, ShieldCheck, Contact, Kanban, Bell, BarChart3, UsersRound, Database, Check } from "lucide-react";
+import { Zap, Eye, Server, Sparkles, UserCheck, ShieldCheck, Contact, Kanban, Bell, BarChart3, UsersRound, Database, Check, MessageSquare, Clock, Wand2, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -28,6 +28,14 @@ const Features = () => {
     { icon: Sparkles, title: t("emailFeatures.f4Title"), desc: t("emailFeatures.f4Desc") },
     { icon: UserCheck, title: t("emailFeatures.f5Title"), desc: t("emailFeatures.f5Desc") },
     { icon: ShieldCheck, title: t("emailFeatures.f6Title"), desc: t("emailFeatures.f6Desc") },
+  ];
+  const aiFeatures = [
+    { icon: MessageSquare, title: t("aiFeatures.f1Title"), desc: t("aiFeatures.f1Desc") },
+    { icon: Sparkles, title: t("aiFeatures.f2Title"), desc: t("aiFeatures.f2Desc") },
+    { icon: ShieldCheck, title: t("aiFeatures.f3Title"), desc: t("aiFeatures.f3Desc") },
+    { icon: Clock, title: t("aiFeatures.f4Title"), desc: t("aiFeatures.f4Desc") },
+    { icon: Wand2, title: t("aiFeatures.f5Title"), desc: t("aiFeatures.f5Desc") },
+    { icon: Globe, title: t("aiFeatures.f6Title"), desc: t("aiFeatures.f6Desc") },
   ];
   const crmFeatures = [
     { icon: Contact, title: t("crmFeatures.f1Title"), desc: t("crmFeatures.f1Desc") },
@@ -62,6 +70,7 @@ const Features = () => {
         <section className="section-padding bg-muted">
           <div className="max-w-[1200px] mx-auto">
             <FeatureGrid title={t("featuresPage.emailTitle")} features={emailFeatures} />
+            <FeatureGrid title={t("featuresPage.aiTitle")} features={aiFeatures} />
             <FeatureGrid title={t("featuresPage.crmTitle")} features={crmFeatures} />
             <div className="mb-20">
               <h2 className="font-heading text-[26px] md:text-[34px] text-secondary text-center mb-12">{t("featuresPage.integrationsTitle")}</h2>
@@ -77,7 +86,7 @@ const Features = () => {
             <div className="text-center mb-12">
               <h2 className="font-heading text-[26px] md:text-[34px] text-secondary mb-8">{t("featuresPage.everythingTitle")}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[800px] mx-auto">
-                {[t("pricing.starterF1"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.starterF3"), t("pricing.growthF8"), t("pricing.growthF10"), t("pricing.growthF9"), t("pricing.growthF2"), t("pricing.agencyF5")].map((f, i) => (
+                {[t("pricing.starterF1"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.starterF3"), t("pricing.growthF8"), t("pricing.growthF11"), t("pricing.growthF9"), t("pricing.growthF2"), t("pricing.agencyF8")].map((f, i) => (
                   <div key={i} className="flex items-center gap-3 text-left">
                     <Check size={18} className="text-primary flex-shrink-0" />
                     <span className="font-body text-[15px] text-secondary">{f}</span>

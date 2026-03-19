@@ -7,17 +7,17 @@ const PricingSection = () => {
   const plans = [
     {
       name: t("pricing.starter"), price: "$29", sub: t("pricing.starterSub"),
-      features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8")],
+      features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8"), t("pricing.starterF9"), t("pricing.starterF10")],
       cta: t("pricing.starterCta"), ctaStyle: "outline" as const, note: t("pricing.starterNote"), popular: false,
     },
     {
       name: t("pricing.growth"), price: "$59", sub: t("pricing.growthSub"),
-      features: [t("pricing.growthF1"), t("pricing.growthF2"), t("pricing.growthF3"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.growthF8"), t("pricing.growthF9"), t("pricing.growthF10"), t("pricing.growthF11")],
+      features: [t("pricing.growthF1"), t("pricing.growthF2"), t("pricing.growthF3"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.growthF8"), t("pricing.growthF9"), t("pricing.growthF10"), t("pricing.growthF11"), t("pricing.growthF12"), t("pricing.growthF13")],
       cta: t("pricing.growthCta"), ctaStyle: "primary" as const, note: t("pricing.growthNote"), popular: true,
     },
     {
       name: t("pricing.agency"), price: "$99", sub: t("pricing.agencySub"),
-      features: [t("pricing.agencyF1"), t("pricing.agencyF2"), t("pricing.agencyF3"), t("pricing.agencyF4"), t("pricing.agencyF5"), t("pricing.agencyF6"), t("pricing.agencyF7"), t("pricing.agencyF8"), t("pricing.agencyF9"), t("pricing.agencyF10")],
+      features: [t("pricing.agencyF1"), t("pricing.agencyF2"), t("pricing.agencyF3"), t("pricing.agencyF4"), t("pricing.agencyF5"), t("pricing.agencyF6"), t("pricing.agencyF7"), t("pricing.agencyF8"), t("pricing.agencyF9"), t("pricing.agencyF10"), t("pricing.agencyF11"), t("pricing.agencyF12")],
       cta: t("pricing.agencyCta"), ctaStyle: "dark" as const, note: "", popular: false,
     },
   ];
