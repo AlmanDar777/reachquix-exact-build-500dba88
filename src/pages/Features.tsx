@@ -41,7 +41,7 @@ const Features = () => {
     { name: "Google Sheets", status: t("featuresPage.available") },
     { name: "Namecheap SMTP", status: t("featuresPage.available") },
     { name: "Amazon SES", status: t("featuresPage.available") },
-    { name: "Brevo", status: t("featuresPage.available") },
+    { name: "Local Server", status: t("featuresPage.available") },
     { name: "Gmail", status: t("featuresPage.available") },
     { name: "Outlook", status: t("featuresPage.available") },
     { name: "WhatsApp", status: t("featuresPage.comingSoon") },
