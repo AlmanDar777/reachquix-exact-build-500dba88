@@ -125,12 +125,12 @@ const HeroDashboard = () => {
         </div>
       </motion.div>
 
-      {/* Layer 4 — Floating metric card middle right */}
+      {/* Layer 4 — Floating metric card middle right (kept but hidden, replaced by revenue card) */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.4 }}
-        className="absolute top-1/2 -right-6 lg:-right-12 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center"
+        className="absolute top-1/2 -right-6 lg:-right-12 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden"
         style={{ animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
       >
         <p className="font-body text-[10px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
@@ -138,6 +138,100 @@ const HeroDashboard = () => {
           <span className="font-heading text-[22px]" style={{ color: "#0C6038" }}>94%</span>
           <ArrowUp size={14} style={{ color: "#0C6038" }} />
         </div>
+      </motion.div>
+
+      {/* NEW CARD 1 — Google Sheets Sync (top left) */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, delay: 1.6 }}
+        className="hidden md:flex absolute z-[25] bg-white rounded-xl"
+        style={{
+          top: "-15px",
+          left: "-25px",
+          padding: "12px 16px",
+          width: "190px",
+          boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
+          animation: "float 3.5s ease-in-out 0.5s infinite",
+        }}
+      >
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#0C6038" }}>
+            <Table size={16} className="text-white" />
+          </div>
+          <div>
+            <p className="font-body text-[13px] font-semibold" style={{ color: "#0A0A0A" }}>Sheets Synced</p>
+            <p className="font-body text-[11px]" style={{ color: "#64748B" }}>1,247 contacts updated</p>
+            <div className="flex items-center gap-1 mt-0.5">
+              <span className="w-1.5 h-1.5 rounded-full inline-block" style={{ backgroundColor: "#0C6038", animation: "pulse-dot 1.5s ease-in-out infinite" }} />
+              <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Live sync active</span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* NEW CARD 2 — Revenue Card (right middle) */}
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.8 }}
+        className="hidden md:block absolute z-[25] bg-white rounded-xl"
+        style={{
+          right: "-35px",
+          top: "40%",
+          padding: "14px 18px",
+          width: "160px",
+          boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
+          animation: "float 3.5s ease-in-out 1s infinite",
+        }}
+      >
+        <p className="font-body text-[11px]" style={{ color: "#64748B" }}>Revenue</p>
+        <p className="font-heading text-[26px] font-bold" style={{ color: "#0A0A0A" }}>$12,400</p>
+        <div className="flex items-center gap-1">
+          <ArrowUp size={14} style={{ color: "#0C6038" }} />
+          <span className="font-body text-[11px] font-medium" style={{ color: "#0C6038" }}>+24% this month</span>
+        </div>
+        <div className="flex items-end gap-[3px] mt-2">
+          {[8, 12, 10, 16, 20].map((h, i) => (
+            <div key={i} className="w-3.5 rounded-sm" style={{ height: `${h}px`, backgroundColor: "#0C6038" }} />
+          ))}
+        </div>
+      </motion.div>
+
+      {/* NEW CARD 3 — AI Sequence Card (bottom right) */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 2.0 }}
+        className="hidden md:block absolute z-[25] bg-white rounded-xl"
+        style={{
+          bottom: "-20px",
+          right: "-15px",
+          padding: "12px 16px",
+          width: "220px",
+          boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
+          animation: "float 3.5s ease-in-out 1.5s infinite",
+        }}
+      >
+        <div className="flex items-center gap-2 mb-2">
+          <Bot size={16} style={{ color: "#0C6038" }} />
+          <span className="font-body text-[12px] font-semibold" style={{ color: "#0A0A0A" }}>AI Sequence Running</span>
+        </div>
+        <div className="flex flex-col gap-1.5">
+          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#F0FDF4" }}>
+            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#0C6038" }} />
+            <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Email 1 — Sent ✓</span>
+          </div>
+          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#F0FDF4" }}>
+            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#0C6038" }} />
+            <span className="font-body text-[10px] font-medium" style={{ color: "#0C6038" }}>Follow-up — Sent ✓</span>
+          </div>
+          <div className="h-6 rounded-full flex items-center gap-1.5 px-2.5" style={{ backgroundColor: "#FEF3C7" }}>
+            <span className="w-[5px] h-[5px] rounded-full" style={{ backgroundColor: "#D97706" }} />
+            <span className="font-body text-[10px] font-medium" style={{ color: "#D97706" }}>Day 7 — Scheduled ⏰</span>
+          </div>
+        </div>
+        <p className="font-body text-[10px] mt-1.5" style={{ color: "#94A3B8" }}>Next send in 2 days</p>
       </motion.div>
     </motion.div>
   );
