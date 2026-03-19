@@ -269,7 +269,7 @@ const HeroSection = () => {
               <span className="font-body text-[13px]">{t("hero.euRegistered")}</span>
             </motion.div>
           </div>
-          <div className="flex-1 w-full">
+          <div className="flex-1 lg:w-1/2 lg:flex-none w-full flex justify-center lg:justify-end">
             <HeroDashboard />
           </div>
         </div>
