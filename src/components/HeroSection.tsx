@@ -9,7 +9,7 @@ const HeroDashboard = () => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
-      className="relative w-full max-w-[580px] mx-auto lg:mx-0"
+      className="relative w-full max-w-[520px] mx-auto"
       style={{ animation: "float 3s ease-in-out infinite" }}
     >
       {/* Layer 1 — Main browser window */}
@@ -96,7 +96,7 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="absolute -top-4 -right-4 lg:-right-8 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5"
+        className="absolute -top-4 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5 z-[20]"
         style={{ animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}
       >
         <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
@@ -113,7 +113,7 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
-        className="absolute -bottom-4 -left-4 lg:-left-8 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5"
+        className="absolute -bottom-4 left-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5 z-[20]"
         style={{ animation: "float 3s ease-in-out 1s infinite" }}
       >
         <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
@@ -130,7 +130,7 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.4 }}
-        className="absolute top-1/2 -right-6 lg:-right-12 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden"
+        className="absolute top-1/2 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden z-[20]"
         style={{ animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
       >
         <p className="font-body text-[10px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
@@ -145,10 +145,10 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className="hidden md:flex absolute z-[25] bg-white rounded-xl"
+        className="hidden md:flex absolute z-[22] bg-white rounded-xl"
         style={{
           top: "-15px",
-          left: "-25px",
+          left: "0px",
           padding: "12px 16px",
           width: "190px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
@@ -175,10 +175,10 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1.8 }}
-        className="hidden md:block absolute z-[25] bg-white rounded-xl"
+        className="hidden md:block absolute z-[30] bg-white rounded-xl"
         style={{
-          right: "-35px",
-          top: "40%",
+          right: "-10px",
+          top: "15%",
           padding: "14px 18px",
           width: "160px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
@@ -205,8 +205,8 @@ const HeroDashboard = () => {
         transition={{ duration: 0.5, delay: 2.0 }}
         className="hidden md:block absolute z-[25] bg-white rounded-xl"
         style={{
-          bottom: "-20px",
-          right: "-15px",
+          bottom: "-30px",
+          right: "-10px",
           padding: "12px 16px",
           width: "220px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
@@ -240,10 +240,10 @@ const HeroDashboard = () => {
 const HeroSection = () => {
   const { t } = useTranslation();
   return (
-    <section id="hero" className="pt-[72px] min-h-screen flex items-center bg-primary">
+    <section id="hero" className="pt-[72px] min-h-screen flex items-center bg-primary overflow-hidden">
       <div className="w-full max-w-[1200px] mx-auto px-6 py-20 md:py-24 lg:py-32">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          <div className="flex-1">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-12">
+          <div className="flex-1 lg:w-1/2 lg:flex-none">
             <motion.p initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.05, ease: [0.4, 0, 0.2, 1] }} className="section-label mb-4" style={{ color: "rgba(255,255,255,0.8)" }}>
               {t("hero.label")}
             </motion.p>
@@ -269,7 +269,7 @@ const HeroSection = () => {
               <span className="font-body text-[13px]">{t("hero.euRegistered")}</span>
             </motion.div>
           </div>
-          <div className="flex-1 w-full">
+          <div className="flex-1 lg:w-1/2 lg:flex-none w-full flex justify-center lg:justify-end">
             <HeroDashboard />
           </div>
         </div>
