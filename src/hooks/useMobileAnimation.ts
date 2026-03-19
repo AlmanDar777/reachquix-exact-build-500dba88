@@ -1,5 +1,7 @@
 import { useIsMobile } from "@/hooks/use-mobile";
 
+const EASE: [number, number, number, number] = [0.4, 0, 0.2, 1];
+
 /**
  * Returns framer-motion props optimized for mobile:
  * - On mobile: simple fade only, no stagger delay
@@ -15,7 +17,7 @@ export const useMobileAnimation = () => {
     transition: {
       duration: isMobile ? 0.3 : 0.5,
       delay: isMobile ? 0 : index * delayPerItem,
-      ease: [0.4, 0, 0.2, 1],
+      ease: EASE,
     },
   });
 
@@ -23,7 +25,7 @@ export const useMobileAnimation = () => {
     initial: { opacity: 0, ...(isMobile ? {} : { y: 20 }) },
     whileInView: { opacity: 1, ...(isMobile ? {} : { y: 0 }) },
     viewport: { once: true, amount: 0.2 },
-    transition: { duration: isMobile ? 0.3 : 0.6, ease: [0.4, 0, 0.2, 1] },
+    transition: { duration: isMobile ? 0.3 : 0.6, ease: EASE },
   });
 
   const getSlideAnimation = (index: number, direction: "left" | "right" = "left") => ({
@@ -33,7 +35,7 @@ export const useMobileAnimation = () => {
     transition: {
       duration: isMobile ? 0.3 : 0.5,
       delay: isMobile ? 0 : index * 0.05,
-      ease: [0.4, 0, 0.2, 1],
+      ease: EASE,
     },
   });
 
