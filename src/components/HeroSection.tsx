@@ -96,7 +96,7 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
-        className="absolute -top-4 -right-4 lg:-right-8 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5"
+        className="absolute -top-4 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border flex items-start gap-2.5 z-[20]"
         style={{ animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}
       >
         <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
