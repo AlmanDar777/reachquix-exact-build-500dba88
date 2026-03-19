@@ -130,7 +130,7 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.4 }}
-        className="absolute top-1/2 -right-6 lg:-right-12 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden"
+        className="absolute top-1/2 right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-border text-center md:hidden z-[20]"
         style={{ animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
       >
         <p className="font-body text-[10px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
