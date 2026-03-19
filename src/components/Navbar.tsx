@@ -11,8 +11,9 @@ const Navbar = () => {
   const { t } = useTranslation();
 
   const navLinks = [
+    { label: t("nav.home", "Home"), href: "/" },
     { label: t("nav.features"), href: "/features" },
-    { label: t("nav.crm"), href: "/#crm" },
+    { label: t("nav.crm", "CRM"), href: "/crm" },
     { label: t("nav.pricing"), href: "/pricing" },
     { label: t("nav.blog"), href: "/blog" },
     { label: t("nav.about"), href: "/about" },
