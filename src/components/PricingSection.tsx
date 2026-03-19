@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { useMobileAnimation } from "@/hooks/useMobileAnimation";
 
 const PricingSection = () => {
   const { t } = useTranslation();
-  const { getCardAnimation, getSectionAnimation } = useMobileAnimation();
   const plans = [
     {
       name: t("pricing.starter"), price: "$29", sub: t("pricing.starterSub"),
@@ -27,14 +25,14 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="section-padding" style={{ backgroundColor: "#F8FAFC" }}>
       <div className="max-w-[1200px] mx-auto">
-        <motion.div {...getSectionAnimation()} className="text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }} className="text-center mb-16">
           <p className="section-label mb-4">{t("pricing.label")}</p>
           <h2 className="font-heading text-[26px] md:text-[38px] leading-[1.2] tracking-[-0.02em] text-reachquix-navy mb-4" style={{ textWrap: "balance" } as React.CSSProperties}>{t("pricing.title")}</h2>
           <p className="font-body text-[16px] md:text-[18px] leading-[1.7] text-reachquix-muted-text max-w-[600px] mx-auto">{t("pricing.subtitle")}</p>
         </motion.div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
           {plans.map((plan, i) => (
-            <motion.div key={i} {...getCardAnimation(i, 0.15)} className={`bg-white rounded-xl p-6 md:p-8 border relative gpu-accelerated ${plan.popular ? "border-2 lg:scale-[1.03] z-10" : "border-reachquix-border"}`} style={plan.popular ? { borderColor: "#0C6038" } : {}}>
+            <motion.div key={i} initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, delay: i * 0.15, ease: [0.4, 0, 0.2, 1] }} className={`bg-white rounded-xl p-6 md:p-8 border relative ${plan.popular ? "border-2 lg:scale-[1.03] z-10" : "border-reachquix-border"}`} style={plan.popular ? { borderColor: "#0C6038" } : {}}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full font-body font-medium text-[13px] text-white" style={{ backgroundColor: "#0C6038" }}>{t("pricing.popular")}</div>
               )}

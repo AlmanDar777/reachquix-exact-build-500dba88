@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const logos = [
@@ -16,7 +17,7 @@ const LogoBar = () => {
         </p>
       </div>
       <div className="relative overflow-hidden">
-        <div className="animate-marquee flex items-center gap-16 whitespace-nowrap gpu-accelerated">
+        <div className="animate-marquee flex items-center gap-16 whitespace-nowrap">
           {[...logos, ...logos].map((logo, i) => (
             <span key={i} className="font-heading text-[18px] text-reachquix-navy/30 select-none flex-shrink-0">
               {logo}

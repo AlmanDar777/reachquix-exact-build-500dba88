@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { useMobileAnimation } from "@/hooks/useMobileAnimation";
 
 const StepMockup = ({ mockup }: { mockup: { title: string; rows?: { name: string; email: string; status: string }[]; steps?: string[]; stats?: { label: string; value: string }[]; stages?: string[] } }) => (
   <div className="w-full rounded-xl border border-border bg-white overflow-hidden shadow-sm">
@@ -65,7 +64,6 @@ const StepMockup = ({ mockup }: { mockup: { title: string; rows?: { name: string
 
 const HowItWorks = () => {
   const { t } = useTranslation();
-  const { getSectionAnimation, isMobile } = useMobileAnimation();
   const steps = [
     {
       num: "01", title: t("howItWorks.step1Title"), desc: t("howItWorks.step1Desc"),
@@ -92,7 +90,7 @@ const HowItWorks = () => {
   return (
     <section className="section-padding bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <motion.div {...getSectionAnimation()} className="text-center mb-16">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }} className="text-center mb-16">
           <p className="section-label mb-4">{t("howItWorks.label")}</p>
           <h2 className="font-heading text-[26px] md:text-[38px] leading-[1.2] tracking-[-0.02em] text-secondary mb-4" style={{ textWrap: "balance" } as React.CSSProperties}>{t("howItWorks.title")}</h2>
           <p className="font-body text-[16px] md:text-[18px] leading-[1.7] text-muted-foreground max-w-[600px] mx-auto">{t("howItWorks.subtitle")}</p>
@@ -101,14 +99,7 @@ const HowItWorks = () => {
           {steps.map((step, i) => {
             const isEven = i % 2 === 0;
             return (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, ...(isMobile ? {} : { x: isEven ? -40 : 40 }) }}
-                whileInView={{ opacity: 1, ...(isMobile ? {} : { x: 0 }) }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: isMobile ? 0.3 : 0.5, ease: [0.4, 0, 0.2, 1] }}
-                className={`flex flex-col md:flex-row items-start gap-8 md:gap-16 gpu-accelerated ${!isEven ? "md:flex-row-reverse" : ""}`}
-              >
+              <motion.div key={step.num} initial={{ opacity: 0, x: isEven ? -40 : 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }} className={`flex flex-col md:flex-row items-start gap-8 md:gap-16 ${!isEven ? "md:flex-row-reverse" : ""}`}>
                 <div className="flex-1 relative">
                   <span className="font-heading text-[80px] leading-none absolute -top-4 -left-2 select-none" style={{ color: "rgba(12, 96, 56, 0.15)" }}>{step.num}</span>
                   <div className="pt-16">
