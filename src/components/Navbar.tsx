@@ -31,6 +31,7 @@ const Navbar = () => {
   };
 
   const isActive = (href: string) => {
+    if (href === "/") return location.pathname === "/";
     if (href.startsWith("/#")) return false;
     return location.pathname === href;
   };
