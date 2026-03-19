@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 const logos = [
-  "TechCorp", "Gulf Properties", "MENA Digital", "Dubai Sales Co",
-  "Al Rashid Group", "Emirates Leads", "Abu Dhabi Ventures", "Saudi Growth",
-  "Khaleeji Media", "Oman Solutions"
+  "Freshworks", "Pipedrive", "Calendly", "Typeform", "Hotjar",
+  "Intercom", "Drift", "Clearbit", "Apollo.io", "Lemlist"
 ];
 
 const LogoBar = () => {
