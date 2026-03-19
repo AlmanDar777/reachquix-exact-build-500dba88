@@ -144,12 +144,15 @@
     "f10": "AI Reply Analyzer",
     "f11": "AI Icebreaker Generator",
     "f12": "WhatsApp + Email sequences",
+    "f13": "Multi-language AI writer (10+ languages)",
+    "f14": "AI Reply Analyzer",
+    "f15": "WhatsApp + Email sequences",
     "card1Title": "No More CSV Uploads — Ever",
     "card1Desc": "Every other tool in the world makes you export a spreadsheet, clean it up, save it as CSV, upload it, wait for it to process — then do it all again next week. Reachquix connects directly to your live Google Sheet. Your contacts are always up to date, always in sync, and you never touch a CSV file again.",
     "card2Title": "One Tool Instead of Four",
     "card2Desc": "Right now you are probably paying for a separate email tool ($39+), a CRM ($50+), a scheduling tool ($15+), and a reporting tool ($20+). That is $124/month for four disconnected tools. Reachquix gives you all of it in one dashboard, for one flat price, with one login. The math is simple.",
-    "card3Title": "Built by Someone Who Knows Your Market",
-    "card3Desc": "Our team lives and works in Dubai. We know that business in the Gulf runs differently. We know that WhatsApp matters as much as email. We know that real estate is the biggest industry in the region. We know what Arabic-speaking clients expect. We built Reachquix with all of that in mind — because no tool built in San Francisco ever will."
+    "card3Title": "EU Registered — Trusted Everywhere",
+    "card3Desc": "Reachquix OÜ is registered in the Republic of Estonia, European Union — giving every client from New York to Singapore the security, GDPR compliance, and international credibility of a fully regulated European company."
   },
   "pricing": {
     "label": "SIMPLE, HONEST PRICING",
