@@ -11,6 +11,7 @@ const WhyReachquix = () => {
     t("whyReachquix.f4"), t("whyReachquix.f5"), t("whyReachquix.f6"),
     t("whyReachquix.f7"), t("whyReachquix.f8"), t("whyReachquix.f9"),
     t("whyReachquix.f10"), t("whyReachquix.f11"), t("whyReachquix.f12"),
+    t("whyReachquix.f13"), t("whyReachquix.f14"), t("whyReachquix.f15"),
   ];
   const cards = [
     { title: t("whyReachquix.card1Title"), desc: t("whyReachquix.card1Desc") },

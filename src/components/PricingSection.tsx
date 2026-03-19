@@ -7,7 +7,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: t("pricing.starter"), price: "$29", sub: t("pricing.starterSub"),
-      features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8"), t("pricing.starterF9"), t("pricing.starterF10")],
+      features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8"), t("pricing.starterF9"), t("pricing.starterF10"), t("pricing.starterF11")],
       cta: t("pricing.starterCta"), ctaStyle: "outline" as const, note: t("pricing.starterNote"), popular: false,
     },
     {

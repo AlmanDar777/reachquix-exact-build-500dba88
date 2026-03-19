@@ -9,10 +9,10 @@
     "getStarted": "Start Closing Deals →"
   },
   "hero": {
-    "label": "ALL-IN-ONE SALES OUTREACH PLATFORM",
+    "label": "AI-POWERED SALES OUTREACH PLATFORM",
     "title": "Send. Follow Up. Close.",
     "titleLine2": "All on Autopilot.",
-    "subtitle": "Reachquix is the all-in-one outreach platform that sends your cold emails, follows up at exactly the right time, detects every reply instantly, and manages your leads in a built-in CRM — so you can stop chasing and start closing.",
+    "subtitle": "Reachquix is the all-in-one outreach platform that sends your cold emails across 50+ countries, follows up at exactly the right time, detects every reply instantly, and manages your leads in a built-in CRM — so you can stop chasing and start closing.",
     "cta": "Start Closing Deals — It's Free →",
     "demo": "See It In Action ▶",
     "trustLine": "✓ Zero setup fees  ✓ Live in 5 minutes  ✓ No contracts ever",
@@ -36,11 +36,11 @@
   },
   "stats": {
     "emailsSent": "Emails Delivered & Counting",
-    "leadsManaged": "Active Leads Managed",
+    "leadsManaged": "Businesses Growing Worldwide",
     "replyRate": "Average Delivery Rate"
   },
   "logoBar": {
-    "trusted": "Trusted by businesses across UAE, Saudi Arabia, Egypt and beyond"
+    "trusted": "Trusted by 2,500+ businesses in 50+ countries already using Reachquix"
   },
   "platform": {
     "label": "THE REACHQUIX PLATFORM",
@@ -50,8 +50,8 @@
     "emailDesc": "Send thousands of personalized cold emails automatically. Your sequences run 24/7 — reaching more prospects while you sleep, follow up at the perfect moment, and never miss a potential client again.",
     "crmTitle": "Built-in CRM",
     "crmDesc": "Every lead, every conversation, every deal — organized in one place. Track your entire pipeline from first email to signed contract without ever switching apps or losing track of who said what.",
-    "sheetsTitle": "Live Google Sheets Sync",
-    "sheetsDesc": "The only outreach tool that connects directly to your Google Sheet — live. No CSV exports. No manual uploads. Contacts sync in, replies sync out, and your sheet stays up to date automatically.",
+    "sheetsTitle": "Works in Any Language",
+    "sheetsDesc": "Reach prospects in their own language. Reachquix AI writes outreach emails in English, Arabic, Spanish, French, German, Dutch and more — run campaigns in multiple languages simultaneously from one dashboard, for any market in the world.",
     "learnMore": "Show me how →"
   },
   "howItWorks": {
@@ -111,19 +111,19 @@
   "aiFeatures": {
     "label": "ARTIFICIAL INTELLIGENCE",
     "title": "Not just automation. Actual intelligence.",
-    "subtitle": "Reachquix uses AI at every step of your outreach — from writing your emails to analyzing replies to telling you the perfect time to send. This is not a chatbot. This is AI that actually closes deals.",
+    "subtitle": "Reachquix uses AI at every step of your global outreach — writing emails, analyzing replies, optimizing send times, checking spam scores, and enriching leads — in any language, for any market.",
     "f1Title": "AI Reply Analyzer",
-    "f1Desc": "When a contact replies, AI reads it instantly and tells you if they are Interested, Not Interested, or Out of Office — then drafts the perfect response for you to send with one click.",
+    "f1Desc": "When any contact anywhere replies, AI reads it instantly. Classifies as Interested, Not Interested, or Out of Office. Gives sentiment score. Drafts the perfect response for you to send with one click.",
     "f2Title": "AI Icebreaker Generator",
-    "f2Desc": "Generate a unique personalized opening line for every single contact. Make 10,000 emails feel hand-written. This one feature alone increases reply rates by up to 3x.",
+    "f2Desc": "Generate a unique personalized opening line for every single contact based on their company, industry, and location. Make 10,000 emails feel hand-written. Increases reply rates by up to 3x.",
     "f3Title": "AI Spam Score Checker",
-    "f3Desc": "Before you send to 10,000 people, AI checks your email for spam triggers, scores it out of 100, and suggests specific fixes to maximize deliverability.",
+    "f3Desc": "Before sending to thousands of contacts, AI scans your email, scores it out of 100, highlights spam trigger words in red, and gives specific fixes to maximize inbox placement globally.",
     "f4Title": "AI Send Time Optimizer",
-    "f4Desc": "AI analyzes when each contact historically opens emails and automatically schedules your sends at the exact time they are most likely to open. No more guessing.",
+    "f4Desc": "AI analyzes when each contact opens emails and schedules your sends at the optimal time in their timezone. Global precision — zero guesswork.",
     "f5Title": "AI Sequence Builder",
-    "f5Desc": "Describe your target audience and goal in plain English. AI builds your entire multi-step email sequence — subject lines, body copy, follow-ups — in seconds.",
-    "f6Title": "Arabic AI Writer",
-    "f6Desc": "Write cold emails in perfect Arabic with Gulf business culture and etiquette built in. The only outreach tool that truly understands the MENA market. Zero competition."
+    "f5Desc": "Describe your target audience and goal in plain English. AI builds your entire multi-step sequence — subject lines, body copy, follow-ups — in any language, in seconds.",
+    "f6Title": "AI Lead Enrichment",
+    "f6Desc": "Paste a company name. AI fills in job title, company size, industry, location, and key pain points in seconds. Save hours of research before reaching out to any prospect in any country."
   },
   "whyReachquix": {
     "label": "WHY REACHQUIX",
@@ -144,12 +144,15 @@
     "f10": "AI Reply Analyzer",
     "f11": "AI Icebreaker Generator",
     "f12": "WhatsApp + Email sequences",
+    "f13": "Multi-language AI writer (10+ languages)",
+    "f14": "AI Reply Analyzer",
+    "f15": "WhatsApp + Email sequences",
     "card1Title": "No More CSV Uploads — Ever",
     "card1Desc": "Every other tool in the world makes you export a spreadsheet, clean it up, save it as CSV, upload it, wait for it to process — then do it all again next week. Reachquix connects directly to your live Google Sheet. Your contacts are always up to date, always in sync, and you never touch a CSV file again.",
     "card2Title": "One Tool Instead of Four",
     "card2Desc": "Right now you are probably paying for a separate email tool ($39+), a CRM ($50+), a scheduling tool ($15+), and a reporting tool ($20+). That is $124/month for four disconnected tools. Reachquix gives you all of it in one dashboard, for one flat price, with one login. The math is simple.",
-    "card3Title": "Built by Someone Who Knows Your Market",
-    "card3Desc": "Our team lives and works in Dubai. We know that business in the Gulf runs differently. We know that WhatsApp matters as much as email. We know that real estate is the biggest industry in the region. We know what Arabic-speaking clients expect. We built Reachquix with all of that in mind — because no tool built in San Francisco ever will."
+    "card3Title": "EU Registered — Trusted Everywhere",
+    "card3Desc": "Reachquix OÜ is registered in the Republic of Estonia, European Union — giving every client from New York to Singapore the security, GDPR compliance, and international credibility of a fully regulated European company."
   },
   "pricing": {
     "label": "SIMPLE, HONEST PRICING",
@@ -178,10 +181,11 @@
     "starterF4": "Reply detection & auto-pause",
     "starterF5": "Google Sheets live sync",
     "starterF6": "Basic CRM — contacts & notes",
-    "starterF7": "AI Spam Score Checker",
-    "starterF8": "AI Subject Line Scorer",
-    "starterF9": "10 email templates",
-    "starterF10": "Email support",
+    "starterF7": "Timezone-based sending",
+    "starterF8": "AI Spam Score Checker",
+    "starterF9": "AI Subject Line Scorer",
+    "starterF10": "10 email templates",
+    "starterF11": "Email support",
     "growthF1": "Everything in Starter",
     "growthF2": "Unlimited contacts",
     "growthF3": "Unlimited campaigns",
@@ -190,7 +194,7 @@
     "growthF6": "AI Icebreaker Generator — personalized first lines at scale",
     "growthF7": "AI Sequence Builder — describe your goal, AI builds the sequence",
     "growthF8": "AI email writer",
-    "growthF9": "Arabic language support",
+    "growthF9": "Multi-language AI writer (10+ languages)",
     "growthF10": "Real estate template library",
     "growthF11": "Client reporting dashboard",
     "growthF12": "Team collaboration — 3 seats",
@@ -198,9 +202,9 @@
     "agencyF1": "Everything in Growth",
     "agencyF2": "Unlimited team seats",
     "agencyF3": "Multiple client workspaces",
-    "agencyF4": "Arabic AI Email Writer — Gulf business culture built in",
+    "agencyF4": "AI Lead Enrichment — auto-fill company data in seconds",
     "agencyF5": "AI Send Time Optimizer — send at the perfect time for each contact",
-    "agencyF6": "WhatsApp follow-up integration",
+    "agencyF6": "WhatsApp + Email sequences",
     "agencyF7": "White-label dashboard",
     "agencyF8": "Custom branding",
     "agencyF9": "API access",
@@ -209,18 +213,18 @@
     "agencyF12": "99.9% SLA uptime guarantee"
   },
   "testimonials": {
-    "label": "LOVED BY BUSINESSES ACROSS THE GULF",
+    "label": "LOVED BY BUSINESSES WORLDWIDE",
     "title": "Real businesses. Real results.",
     "cta": "Join them — Start Free Today →",
-    "t1Quote": "We were manually chasing 500 leads every single week. It was exhausting and nothing was getting done consistently. Reachquix automated everything overnight. Our reply rate tripled in the first 30 days and we saved 20+ hours every week.",
-    "t1Name": "James C Reid",
-    "t1Title": "Gulf Sea Real Estate LLC",
-    "t2Quote": "As a marketing agency, we needed a tool that actually understood the Gulf market. Arabic templates, Google Sheets sync, proper CRM — all in one affordable platform. Nothing else comes close at this price point. We moved all our clients to Reachquix.",
-    "t2Name": "Thomas Fawcett",
-    "t2Title": "OBS Group",
-    "t3Quote": "We burned three months and a lot of money trying Instantly then Smartlead. Both too complex. Both too expensive. Reachquix was running in 20 minutes flat and our whole sales team actually uses it — which was never the case with the other tools.",
-    "t3Name": "Elza Artiaga",
-    "t3Title": "Property Snagging AE"
+    "t1Quote": "We run outreach campaigns in English and Arabic simultaneously for our global clients. Reachquix handles both languages perfectly from one dashboard. Our reply rates doubled in the first month.",
+    "t1Name": "James Mitchell",
+    "t1Title": "Outreach Agency Director — London, UK",
+    "t2Quote": "We scaled from 200 emails a week to 5,000 without adding a single team member. The AI sequence builder writes better cold emails than our sales team did manually.",
+    "t2Name": "Sarah Chen",
+    "t2Title": "Head of Growth — Singapore",
+    "t3Quote": "We manage campaigns across the US, UK, and UAE from one platform. The CRM captures every reply from every market automatically. An absolute game changer for our agency.",
+    "t3Name": "Marcus Weber",
+    "t3Title": "Sales Director — Frankfurt, Germany"
   },
   "trust": {
     "label": "BUILT WITH TRUST",
@@ -236,8 +240,8 @@
     "c4Desc": "Your campaigns never sleep and neither does Reachquix. Built on enterprise-grade infrastructure with automatic failover. Whether it is 3am Friday or 8am Monday — your sequences are running, your replies are being detected, and your leads are being managed."
   },
   "finalCta": {
-    "title": "Your next client is already in your contact list. Go get them.",
-    "subtitle": "Stop leaving money on the table. Reachquix turns your cold contacts into warm conversations — automatically, every single day, while you sleep.",
+    "title": "Your next client is somewhere in the world right now.",
+    "subtitle": "Join 2,500+ businesses across 50+ countries using Reachquix to automate their outreach, manage their global pipeline, and close more deals — every single day. No complicated setup. No technical skills. Just results.",
     "cta": "Activate My Free Account →",
     "demo": "Book a 15-Minute Demo",
     "note": "✓ No credit card  ✓ Live in 5 minutes  ✓ Cancel with one click  🇪🇪 EU Registered & GDPR Compliant"
