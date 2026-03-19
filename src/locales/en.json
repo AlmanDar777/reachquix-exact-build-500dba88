@@ -108,6 +108,23 @@
     "f6Title": "Zero Manual Data Entry",
     "f6Desc": "When a contact replies to your campaign, they appear in your CRM automatically — with their full email thread already attached, their sequence status updated, and their contact details filled in. You close deals. We do the admin."
   },
+  "aiFeatures": {
+    "label": "ARTIFICIAL INTELLIGENCE",
+    "title": "Not just automation. Actual intelligence.",
+    "subtitle": "Reachquix uses AI at every step of your outreach — from writing your emails to analyzing replies to telling you the perfect time to send. This is not a chatbot. This is AI that actually closes deals.",
+    "f1Title": "AI Reply Analyzer",
+    "f1Desc": "When a contact replies, AI reads it instantly and tells you if they are Interested, Not Interested, or Out of Office — then drafts the perfect response for you to send with one click.",
+    "f2Title": "AI Icebreaker Generator",
+    "f2Desc": "Generate a unique personalized opening line for every single contact. Make 10,000 emails feel hand-written. This one feature alone increases reply rates by up to 3x.",
+    "f3Title": "AI Spam Score Checker",
+    "f3Desc": "Before you send to 10,000 people, AI checks your email for spam triggers, scores it out of 100, and suggests specific fixes to maximize deliverability.",
+    "f4Title": "AI Send Time Optimizer",
+    "f4Desc": "AI analyzes when each contact historically opens emails and automatically schedules your sends at the exact time they are most likely to open. No more guessing.",
+    "f5Title": "AI Sequence Builder",
+    "f5Desc": "Describe your target audience and goal in plain English. AI builds your entire multi-step email sequence — subject lines, body copy, follow-ups — in seconds.",
+    "f6Title": "Arabic AI Writer",
+    "f6Desc": "Write cold emails in perfect Arabic with Gulf business culture and etiquette built in. The only outreach tool that truly understands the MENA market. Zero competition."
+  },
   "whyReachquix": {
     "label": "WHY REACHQUIX",
     "title": "Built different. Built for you.",
