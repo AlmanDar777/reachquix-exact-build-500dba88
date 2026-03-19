@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageSquare, Sparkles, ShieldCheck, Clock, Wand2, Globe } from "lucide-react";
+import { MessageSquare, Sparkles, ShieldCheck, Clock, Wand2, Search } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const AIFeatures = () => {
