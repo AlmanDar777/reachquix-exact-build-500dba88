@@ -16,12 +16,21 @@ interface BlogPost {
   created_at: string;
 }
 
-const categories = ["Email Marketing", "Sales Outreach", "CRM Tips", "MENA Business", "Product Updates", "Case Studies"];
-
 const Blog = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [activeCategory, setActiveCategory] = useState("All");
+
+  const categoryOptions = [
+    { value: "Email Marketing", label: t("blog.categories.emailMarketing") },
+    { value: "Sales Outreach", label: t("blog.categories.salesOutreach") },
+    { value: "CRM Tips", label: t("blog.categories.crmTips") },
+    { value: "MENA Business", label: t("blog.categories.menaBusiness") },
+    { value: "Product Updates", label: t("blog.categories.productUpdates") },
+    { value: "Case Studies", label: t("blog.categories.caseStudies") },
+  ];
+
+  const categoryLabels = Object.fromEntries(categoryOptions.map((option) => [option.value, option.label])) as Record<string, string>;
 
   useEffect(() => {
     supabase
@@ -34,7 +43,7 @@ const Blog = () => {
       });
   }, []);
 
-  const filtered = activeCategory === "All" ? posts : posts.filter((p) => p.category === activeCategory);
+  const filtered = activeCategory === "All" ? posts : posts.filter((post) => post.category === activeCategory);
 
   return (
     <div className="min-h-screen">
@@ -49,8 +58,8 @@ const Blog = () => {
         <section className="py-6 border-b border-border bg-white">
           <div className="max-w-[1200px] mx-auto px-6 flex flex-wrap gap-3">
             <button onClick={() => setActiveCategory("All")} className={`font-body text-[14px] font-medium px-4 py-2 rounded-full ${activeCategory === "All" ? "bg-primary text-white" : "border border-border text-secondary hover:bg-muted"} transition-colors`}>{t("blog.all")}</button>
-            {categories.map((c) => (
-              <button key={c} onClick={() => setActiveCategory(c)} className={`font-body text-[14px] font-medium px-4 py-2 rounded-full ${activeCategory === c ? "bg-primary text-white" : "border border-border text-secondary hover:bg-muted"} transition-colors`}>{c}</button>
+            {categoryOptions.map((category) => (
+              <button key={category.value} onClick={() => setActiveCategory(category.value)} className={`font-body text-[14px] font-medium px-4 py-2 rounded-full ${activeCategory === category.value ? "bg-primary text-white" : "border border-border text-secondary hover:bg-muted"} transition-colors`}>{category.label}</button>
             ))}
           </div>
         </section>
@@ -66,13 +75,13 @@ const Blog = () => {
                       <span className="font-heading text-[48px] text-primary/20">{post.title[0]}</span>
                     </div>
                     <div className="p-6">
-                      <span className="font-body text-[12px] font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">{post.category}</span>
+                      <span className="font-body text-[12px] font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">{categoryLabels[post.category] ?? post.category}</span>
                       <h2 className="font-heading text-[18px] md:text-[20px] text-secondary mt-3 mb-2 leading-tight">{post.title}</h2>
                       <p className="font-body text-[14px] text-muted-foreground leading-[1.6] mb-4">{post.excerpt}</p>
                       <div className="flex items-center justify-between">
                         <div>
                           <p className="font-body text-[13px] text-secondary">{post.author}</p>
-                          <p className="font-body text-[12px] text-muted-foreground">{new Date(post.created_at).toLocaleDateString()}</p>
+                          <p className="font-body text-[12px] text-muted-foreground">{new Date(post.created_at).toLocaleDateString(i18n.language)}</p>
                         </div>
                         <a href={`/blog/${post.slug}`} className="font-body text-[14px] font-medium text-primary hover:underline flex items-center gap-1">{t("blog.readMore")} <ArrowRight size={14} /></a>
                       </div>

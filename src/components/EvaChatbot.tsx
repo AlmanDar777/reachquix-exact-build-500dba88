@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, forwardRef } from "react";
 import { Bot, X, Send } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { supabase } from "@/integrations/supabase/client";
@@ -9,7 +9,7 @@ interface Message {
   sender: "eva" | "user";
 }
 
-const EvaChatbot = () => {
+const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -75,7 +75,7 @@ const EvaChatbot = () => {
   };
 
   return (
-    <>
+    <div ref={ref} className="contents">
       {!isOpen && (
         <button
           onClick={handleOpen}
@@ -98,7 +98,7 @@ const EvaChatbot = () => {
                 {t("eva.online")}
               </span>
             </div>
-            <button onClick={() => setIsOpen(false)} className="text-primary-foreground/80 hover:text-primary-foreground cursor-pointer p-1" aria-label="Close chat">
+            <button onClick={() => setIsOpen(false)} className="text-primary-foreground/80 hover:text-primary-foreground cursor-pointer p-1" aria-label={t("common.closeChat")}>
               <X size={20} />
             </button>
           </div>
@@ -112,7 +112,7 @@ const EvaChatbot = () => {
           </div>
           <div className="border-t border-border p-3 flex gap-2 shrink-0">
             <input value={input} onChange={(e) => setInput(e.target.value)} onKeyDown={(e) => e.key === "Enter" && handleSend()} placeholder={t("eva.placeholder")} className="flex-1 rounded-lg border border-input bg-background px-3 py-2 text-sm font-body placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring" />
-            <button onClick={handleSend} disabled={!input.trim()} className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 transition-colors" aria-label="Send message">
+            <button onClick={handleSend} disabled={!input.trim()} className="w-10 h-10 rounded-lg bg-primary text-primary-foreground flex items-center justify-center cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/90 transition-colors" aria-label={t("common.sendMessage")}>
               <Send size={18} />
             </button>
           </div>
@@ -125,8 +125,10 @@ const EvaChatbot = () => {
           50% { transform: scale(1.05); }
         }
       `}</style>
-    </>
+    </div>
   );
-};
+});
+
+EvaChatbot.displayName = "EvaChatbot";
 
 export default EvaChatbot;
