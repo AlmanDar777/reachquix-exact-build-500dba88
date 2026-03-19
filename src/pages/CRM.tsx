@@ -41,6 +41,56 @@ const additionalFeatures = [
   { icon: ArrowRight, label: "API Access" },
 ];
 
+/* ── Kanban mockup data ── */
+const kanbanColumns = [
+  {
+    title: "New Leads",
+    count: "4",
+    badgeColor: "#94A3B8",
+    borderColor: "#0C6038",
+    cards: [
+      { name: "Ahmed Al Mansoori", company: "Real Estate Agency — Dubai", value: "$5,000/mo" },
+      { name: "Sara Khalid", company: "Marketing Agency — Abu Dhabi", value: "$2,500/mo" },
+      { name: "Ravi Sharma", company: "B2B Tech — Dubai", value: "$3,200/mo" },
+    ],
+  },
+  {
+    title: "Contacted",
+    count: "3",
+    badgeColor: "#6366F1",
+    borderColor: "#6366F1",
+    cards: [
+      { name: "Mohammed Al Rashid", company: "Real Estate Broker", value: "$8,000/mo" },
+      { name: "Fatima Hassan", company: "E-commerce Store", value: "$1,800/mo" },
+    ],
+  },
+  {
+    title: "Replied ✅",
+    count: "2",
+    badgeColor: "#22C55E",
+    borderColor: "#22C55E",
+    cards: [
+      { name: "Omar Abdullah", company: "Logistics Company", value: "$4,500/mo", tag: "Hot 🔥" },
+      { name: "Layla Mahmoud", company: "Consulting Firm", value: "$6,000/mo" },
+    ],
+  },
+  {
+    title: "Closed Won 🏆",
+    count: "1",
+    badgeColor: "#F59E0B",
+    borderColor: "#F59E0B",
+    cards: [
+      { name: "Abdul Rahman", company: "Real Estate Developer", value: "$12,000/mo", tag: "Won ✓", isWon: true },
+    ],
+  },
+];
+
+const statPills = [
+  "💰 $35,000 Pipeline Value",
+  "📈 68% Win Rate",
+  "⚡ 4.2 days avg response",
+];
+
 const CRM = () => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
@@ -71,7 +121,7 @@ const CRM = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col items-center gap-6"
+            className="flex flex-col items-center gap-6 gpu-accelerated"
           >
             <div className="w-16 h-16 rounded-2xl bg-primary-foreground/10 flex items-center justify-center">
               <Users size={32} className="text-primary-foreground" />
@@ -116,11 +166,11 @@ const CRM = () => {
       <section className="bg-background py-20 md:py-28">
         <div className="max-w-[1100px] mx-auto px-6">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-center mb-16"
+            className="text-center mb-16 gpu-accelerated"
           >
             <p className="font-body text-sm font-medium text-primary tracking-widest uppercase mb-3">What's Inside</p>
             <h2 className="font-heading font-semibold text-[28px] md:text-[36px] text-foreground leading-tight">
@@ -135,11 +185,11 @@ const CRM = () => {
             {features.map((feature, i) => (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="rounded-2xl border border-border bg-card p-7 md:p-8 hover:shadow-lg transition-shadow duration-300 group"
+                className="rounded-2xl border border-border bg-card p-7 md:p-8 hover:shadow-lg transition-shadow duration-300 group gpu-accelerated"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
                   <feature.icon size={22} className="text-primary" />
@@ -171,7 +221,7 @@ const CRM = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-center font-body text-sm text-muted-foreground mb-8"
+            className="text-center font-body text-sm text-muted-foreground mb-8 gpu-accelerated"
           >
             Plus even more features coming at launch
           </motion.p>
@@ -179,11 +229,11 @@ const CRM = () => {
             {additionalFeatures.map((f, i) => (
               <motion.div
                 key={f.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.08 }}
-                className="flex items-center gap-2.5 px-5 py-3 rounded-full border border-border bg-background font-body text-[13px] font-medium text-foreground"
+                className="flex items-center gap-2.5 px-5 py-3 rounded-full border border-border bg-background font-body text-[13px] font-medium text-foreground gpu-accelerated"
               >
                 <f.icon size={16} className="text-primary" />
                 {f.label}
@@ -193,32 +243,143 @@ const CRM = () => {
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="bg-primary py-16">
-        <div className="max-w-[500px] mx-auto px-6 text-center flex flex-col items-center gap-5">
-          <h2 className="font-heading font-semibold text-[24px] md:text-[30px] text-primary-foreground">
-            Be the first to try Reachquix CRM
-          </h2>
-          <p className="font-body text-[14px] text-primary-foreground/70">
-            Early access members get exclusive onboarding support and priority feature requests.
-          </p>
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 w-full max-w-[420px]">
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="flex-1 h-12 rounded-lg px-4 text-sm font-body bg-white text-foreground placeholder:text-muted-foreground border-0 focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="h-12 px-6 rounded-lg font-body font-medium text-sm bg-secondary text-white hover:bg-secondary/90 transition-colors disabled:opacity-50 cursor-pointer whitespace-nowrap"
+      {/* CRM Pipeline Mockup */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="max-w-[1100px] mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12 gpu-accelerated"
+          >
+            <p
+              className="font-body font-medium uppercase text-center mb-3"
+              style={{ fontSize: 13, color: "#0C6038", letterSpacing: 2 }}
             >
-              {loading ? "Joining..." : "Join Waitlist →"}
-            </button>
-          </form>
+              SNEAK PEEK
+            </p>
+            <h2
+              className="font-heading leading-tight text-foreground text-center"
+              style={{ fontWeight: 600, fontSize: 36 }}
+            >
+              This is what your pipeline looks like inside Reachquix
+            </h2>
+            <p
+              className="font-body text-center mx-auto mt-4 max-w-[620px]"
+              style={{ fontWeight: 400, fontSize: 16, color: "#64748B" }}
+            >
+              A clean, visual sales pipeline that shows exactly where every deal stands — from first contact to closed won.
+            </p>
+          </motion.div>
+
+          {/* Kanban Board */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="overflow-x-auto gpu-accelerated"
+          >
+            <div
+              className="flex gap-4 min-w-max md:min-w-0 md:grid md:grid-cols-4"
+              style={{
+                background: "#FFFFFF",
+                borderRadius: 16,
+                padding: 24,
+                boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+              }}
+            >
+              {kanbanColumns.map((col) => (
+                <div
+                  key={col.title}
+                  style={{
+                    width: 220,
+                    background: "#F8FAFC",
+                    borderRadius: 12,
+                    padding: 16,
+                  }}
+                  className="md:w-full shrink-0"
+                >
+                  {/* Column header */}
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-body font-semibold text-[13px]" style={{ color: "#64748B" }}>
+                      {col.title}
+                    </span>
+                    <span
+                      className="font-body text-[11px] font-medium px-2 py-0.5 rounded-full text-white"
+                      style={{ background: col.badgeColor }}
+                    >
+                      {col.count}
+                    </span>
+                  </div>
+
+                  {/* Deal cards */}
+                  <div className="space-y-2">
+                    {col.cards.map((card) => (
+                      <div
+                        key={card.name}
+                        style={{
+                          background: card.isWon ? "#FFFBEB" : "#FFFFFF",
+                          borderRadius: 8,
+                          padding: 12,
+                          borderLeft: `3px solid ${col.borderColor}`,
+                          boxShadow: "0 2px 8px rgba(0,0,0,0.06)",
+                        }}
+                      >
+                        <p className="font-body font-semibold text-foreground" style={{ fontSize: 13 }}>
+                          {card.name}
+                        </p>
+                        <p className="font-body" style={{ fontSize: 11, color: "#94A3B8" }}>
+                          {card.company}
+                        </p>
+                        <div className="flex items-center gap-2 mt-1.5">
+                          <span
+                            className="font-body font-medium text-[11px] px-2 py-0.5 rounded-full"
+                            style={{ background: "#F0FDF4", color: "#0C6038" }}
+                          >
+                            {card.value}
+                          </span>
+                          {card.tag && (
+                            <span
+                              className="font-body text-[10px] font-medium px-1.5 py-0.5 rounded"
+                              style={{
+                                background: card.isWon ? "#FEF3C7" : "#FFF7ED",
+                                color: card.isWon ? "#B45309" : "#EA580C",
+                              }}
+                            >
+                              {card.tag}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Stat Pills */}
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
+            {statPills.map((pill) => (
+              <span
+                key={pill}
+                className="font-body"
+                style={{
+                  fontSize: 13,
+                  fontWeight: 500,
+                  color: "#0C6038",
+                  background: "#FFFFFF",
+                  border: "1px solid #E2E8F0",
+                  borderRadius: 20,
+                  padding: "8px 16px",
+                }}
+              >
+                {pill}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
