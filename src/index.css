@@ -120,6 +120,11 @@
   100% { transform: translateY(0px); }
 }
 
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.7; }
+}
+
 /* No horizontal scroll */
 html, body {
   overflow-x: hidden;
