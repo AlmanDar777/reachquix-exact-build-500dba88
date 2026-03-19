@@ -16,6 +16,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
   const [input, setInput] = useState("");
   const [qaData, setQaData] = useState<{ question: string; answer: string }[]>([]);
   const [sessionId] = useState(() => crypto.randomUUID());
+  const [shouldBounce, setShouldBounce] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,8 +33,16 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!isOpen) setShouldBounce(true);
+    }, 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleOpen = () => {
     setIsOpen(true);
+    setShouldBounce(false);
     if (messages.length === 0) {
       setMessages([
         { id: crypto.randomUUID(), text: t("eva.welcome"), sender: "eva" },
@@ -77,15 +86,72 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div ref={ref} className="contents">
       {!isOpen && (
-        <button
-          onClick={handleOpen}
-          className="fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
-          style={{ animation: "evaPulse 2s infinite" }}
-          title={t("eva.tooltip")}
-          aria-label={t("eva.tooltip")}
-        >
-          <Bot size={24} />
-        </button>
+        <>
+          {/* Speech bubble */}
+          <div
+            className={`fixed z-[9999] max-sm:bottom-[88px] max-sm:right-1/2 max-sm:translate-x-1/2 bottom-8 right-[88px] ${shouldBounce ? "eva-bubble-bounce" : ""}`}
+            style={{
+              animation: "evaFadeIn 500ms ease forwards",
+            }}
+          >
+            <div
+              style={{
+                background: "#fff",
+                borderRadius: 12,
+                padding: "8px 14px",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.12)",
+                fontSize: 13,
+                fontWeight: 500,
+                color: "#0A0A0A",
+                fontFamily: "Inter, sans-serif",
+                whiteSpace: "nowrap",
+                position: "relative",
+              }}
+            >
+              Hi! I'm Eva 👋
+              {/* Arrow pointing right (desktop) */}
+              <span
+                className="max-sm:hidden"
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  right: -6,
+                  transform: "translateY(-50%)",
+                  width: 0,
+                  height: 0,
+                  borderTop: "6px solid transparent",
+                  borderBottom: "6px solid transparent",
+                  borderLeft: "6px solid #fff",
+                }}
+              />
+              {/* Arrow pointing down (mobile) */}
+              <span
+                className="hidden max-sm:block"
+                style={{
+                  position: "absolute",
+                  bottom: -6,
+                  left: "50%",
+                  transform: "translateX(-50%)",
+                  width: 0,
+                  height: 0,
+                  borderLeft: "6px solid transparent",
+                  borderRight: "6px solid transparent",
+                  borderTop: "6px solid #fff",
+                }}
+              />
+            </div>
+          </div>
+
+          <button
+            onClick={handleOpen}
+            className="fixed bottom-6 right-6 z-[9999] w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"
+            style={{ animation: "evaPulse 2s infinite" }}
+            title={t("eva.tooltip")}
+            aria-label={t("eva.tooltip")}
+          >
+            <Bot size={24} />
+          </button>
+        </>
       )}
 
       {isOpen && (
@@ -123,6 +189,24 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
         @keyframes evaPulse {
           0%, 100% { transform: scale(1); }
           50% { transform: scale(1.05); }
+        }
+        @keyframes evaFadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        @keyframes evaBubbleBounce {
+          0%, 100% { transform: translateY(0); }
+          25% { transform: translateY(-4px); }
+          50% { transform: translateY(0); }
+          75% { transform: translateY(-2px); }
+        }
+        .eva-bubble-bounce {
+          animation: evaBubbleBounce 1s ease infinite !important;
+        }
+        @media (max-width: 639px) {
+          .eva-bubble-bounce {
+            animation: evaBubbleBounce 1s ease infinite, evaFadeIn 500ms ease forwards !important;
+          }
         }
       `}</style>
     </div>
