@@ -12,7 +12,7 @@ const PricingSection = () => {
     },
     {
       name: t("pricing.growth"), price: "$59", sub: t("pricing.growthSub"),
-      features: [t("pricing.growthF1"), t("pricing.growthF2"), t("pricing.growthF3"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.growthF8"), t("pricing.growthF9"), t("pricing.growthF10"), t("pricing.growthF11"), t("pricing.growthF12"), t("pricing.growthF13")],
+      features: [t("pricing.growthF1"), t("pricing.growthF2"), t("pricing.growthF3"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.growthF8"), t("pricing.growthF9"), t("pricing.growthF10"), t("pricing.growthF11")],
       cta: t("pricing.growthCta"), ctaStyle: "primary" as const, note: t("pricing.growthNote"), popular: true,
     },
     {
