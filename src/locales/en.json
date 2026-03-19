@@ -244,7 +244,8 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "gdprCompliance": "GDPR Compliance",
-    "security": "Security"
+    "security": "Security",
+    "srTitle": "Reachquix — All-in-One Sales Outreach Platform for UAE & MENA Businesses"
   },
   "featuresPage": {
     "label": "FEATURES",
@@ -354,7 +355,15 @@
     "readMore": "Read More",
     "all": "All",
     "noPostsYet": "No blog posts yet. Check back soon!",
-    "cta": "Want results like these? Start free today →"
+    "cta": "Want results like these? Start free today →",
+    "categories": {
+      "emailMarketing": "Email Marketing",
+      "salesOutreach": "Sales Outreach",
+      "crmTips": "CRM Tips",
+      "menaBusiness": "MENA Business",
+      "productUpdates": "Product Updates",
+      "caseStudies": "Case Studies"
+    }
   },
   "login": {
     "panelTitle": "Outreach on autopilot.\nGrowth on demand.",
@@ -378,7 +387,13 @@
   },
   "signup": {
     "panelTitle": "Start closing more deals today.",
-    "benefits": ["Free 14-day trial on Growth plan", "No credit card required", "Setup in under 5 minutes", "Google Sheets connected in seconds", "Cancel anytime — no questions asked"],
+    "benefits": [
+      "Free 14-day trial on Growth plan",
+      "No credit card required",
+      "Setup in under 5 minutes",
+      "Google Sheets connected in seconds",
+      "Cancel anytime — no questions asked"
+    ],
     "testimonial": "Reachquix automated our entire outreach. Reply rate tripled in 30 days.",
     "testimonialAuthor": "— Ahmed Al Mansoori, Dubai",
     "getStarted": "Get started free",
@@ -397,7 +412,8 @@
     "hasAccount": "Already have an account?",
     "loginLink": "Log in →",
     "optional": "Optional",
-    "minPassword": "Min 8 characters"
+    "minPassword": "Min 8 characters",
+    "namePlaceholder": "John Doe"
   },
   "eva": {
     "welcome": "Hi there! I am Eva, your Reachquix assistant. I can help you with questions about our platform, pricing, features, and getting started. What would you like to know?",
@@ -406,5 +422,136 @@
     "online": "Online",
     "fallback": "Great question! Please email us at support@reachquix.com or leave your email and we will get back to you.",
     "tooltip": "Chat with Eva"
+  },
+  "common": {
+    "brand": "Reachquix",
+    "brandTeam": "Reachquix Team",
+    "switchLanguage": "Switch language",
+    "mainNavigation": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "closeChat": "Close chat",
+    "sendMessage": "Send message"
+  },
+  "notFound": {
+    "logPrefix": "404 Error: User attempted to access non-existent route:",
+    "message": "Oops! Page not found",
+    "returnHome": "Return to Home"
+  },
+  "admin": {
+    "loading": "Loading...",
+    "panel": "Admin Panel",
+    "logout": "Logout",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "blog": "Blog Posts",
+      "eva": "Eva Chatbot Q&A",
+      "messages": "Contact Messages",
+      "waitlist": "Waitlist Emails"
+    }
+  },
+  "adminLogin": {
+    "panel": "Admin Panel",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Login to Admin",
+    "loggingIn": "Logging in...",
+    "error": "Access denied. Administrators only."
+  },
+  "adminDashboard": {
+    "pageTitle": "Dashboard",
+    "recentMessagesTitle": "Recent Contact Messages",
+    "recentWaitlistTitle": "Recent Waitlist Signups",
+    "emptyMessages": "No messages yet.",
+    "emptyWaitlist": "No signups yet.",
+    "stats": {
+      "totalPosts": "Total Blog Posts",
+      "publishedPosts": "Published Posts",
+      "conversations": "Eva Conversations",
+      "waitlist": "Waitlist Signups"
+    }
+  },
+  "adminBlog": {
+    "pageTitle": "Blog Posts",
+    "newButton": "New Post",
+    "newTitle": "New Post",
+    "editTitle": "Edit Post",
+    "confirmDelete": "Delete this post?",
+    "editorPlaceholder": "Start writing your blog post...",
+    "promptImageUrl": "Enter image URL:",
+    "titlePlaceholder": "Title",
+    "slugPlaceholder": "Slug (auto-generated)",
+    "authorPlaceholder": "Author",
+    "excerptPlaceholder": "Excerpt (short description)",
+    "featuredImagePlaceholder": "Featured Image URL",
+    "metaTitlePlaceholder": "Meta Title (SEO)",
+    "metaDescriptionPlaceholder": "Meta Description (SEO)",
+    "published": "Published",
+    "saving": "Saving...",
+    "savePost": "Save Post",
+    "saveAndPublish": "Save & Publish",
+    "colTitle": "Title",
+    "colCategory": "Category",
+    "colStatus": "Status",
+    "colDate": "Date",
+    "colActions": "Actions",
+    "statusPublished": "Published",
+    "statusDraft": "Draft",
+    "empty": "No blog posts yet."
+  },
+  "adminQa": {
+    "pageTitle": "Eva Chatbot",
+    "addButton": "Add Q&A",
+    "tabQa": "Q&A Pairs",
+    "tabConversations": "Conversations",
+    "newTitle": "New Q&A",
+    "editTitle": "Edit Q&A",
+    "questionPlaceholder": "Question",
+    "answerPlaceholder": "Answer",
+    "save": "Save Q&A",
+    "saving": "Saving...",
+    "confirmDelete": "Delete this Q&A?",
+    "tableQuestion": "Question",
+    "tableAnswer": "Answer",
+    "tableCategory": "Category",
+    "tableActions": "Actions",
+    "tableTime": "Time",
+    "tableVisitor": "Visitor Message",
+    "tableResponse": "Eva Response",
+    "emptyQa": "No Q&A pairs yet.",
+    "emptyConversations": "No conversations yet.",
+    "categories": {
+      "general": "General",
+      "pricing": "Pricing",
+      "features": "Features",
+      "technical": "Technical",
+      "gettingStarted": "Getting Started"
+    }
+  },
+  "adminMessages": {
+    "pageTitle": "Contact Messages",
+    "back": "Back to Messages",
+    "markRead": "Mark as Read",
+    "markReplied": "Mark as Replied",
+    "from": "From:",
+    "company": "Company:",
+    "date": "Date:",
+    "replyViaEmail": "Reply via Email",
+    "colName": "Name",
+    "colEmail": "Email",
+    "colSubject": "Subject",
+    "colDate": "Date",
+    "colStatus": "Status",
+    "statusReplied": "Replied",
+    "statusRead": "Read",
+    "statusNew": "New",
+    "empty": "No messages yet."
+  },
+  "adminWaitlist": {
+    "pageTitle": "Waitlist Signups",
+    "colEmail": "Email",
+    "colSource": "Source",
+    "colDate": "Date",
+    "empty": "No signups yet."
   }
 }

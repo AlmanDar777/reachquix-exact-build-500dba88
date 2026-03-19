@@ -244,7 +244,8 @@
     "termsOfService": "Servicevoorwaarden",
     "cookiePolicy": "Cookiebeleid",
     "gdprCompliance": "GDPR Compliance",
-    "security": "Beveiliging"
+    "security": "Beveiliging",
+    "srTitle": "Reachquix — Alles-in-één outreach- en salesplatform voor MENA"
   },
   "featuresPage": {
     "label": "FUNCTIES",
@@ -354,7 +355,15 @@
     "readMore": "Lees Meer",
     "all": "Alles",
     "noPostsYet": "Nog geen blogberichten. Kom snel terug!",
-    "cta": "Wil je zulke resultaten? Start vandaag gratis →"
+    "cta": "Wil je zulke resultaten? Start vandaag gratis →",
+    "categories": {
+      "emailMarketing": "E-mailmarketing",
+      "salesOutreach": "Sales outreach",
+      "crmTips": "CRM-tips",
+      "menaBusiness": "MENA-zakelijk",
+      "productUpdates": "Productupdates",
+      "caseStudies": "Casestudy's"
+    }
   },
   "login": {
     "panelTitle": "Outreach op de automatische piloot.\nGroei op aanvraag.",
@@ -378,7 +387,13 @@
   },
   "signup": {
     "panelTitle": "Begin vandaag met meer deals sluiten.",
-    "benefits": ["14 dagen gratis proberen op Groei-plan", "Geen creditcard nodig", "Setup in minder dan 5 minuten", "Google Sheets in seconden verbonden", "Op elk moment opzeggen — geen vragen"],
+    "benefits": [
+      "14 dagen gratis proberen op Groei-plan",
+      "Geen creditcard nodig",
+      "Setup in minder dan 5 minuten",
+      "Google Sheets in seconden verbonden",
+      "Op elk moment opzeggen — geen vragen"
+    ],
     "testimonial": "Reachquix automatiseerde onze hele outreach. Antwoordpercentage verdrievoudigd in 30 dagen.",
     "testimonialAuthor": "— Ahmed Al Mansoori, Dubai",
     "getStarted": "Gratis starten",
@@ -397,7 +412,8 @@
     "hasAccount": "Al een account?",
     "loginLink": "Inloggen →",
     "optional": "Optioneel",
-    "minPassword": "Min. 8 tekens"
+    "minPassword": "Min. 8 tekens",
+    "namePlaceholder": "Volledige naam"
   },
   "eva": {
     "welcome": "Hoi! Ik ben Eva, je Reachquix-assistent. Ik kan je helpen met vragen over ons platform, prijzen, functies en aan de slag gaan. Wat wil je weten?",
@@ -406,5 +422,136 @@
     "online": "Online",
     "fallback": "Goede vraag! Mail ons op support@reachquix.com of laat je e-mail achter en we nemen snel contact op.",
     "tooltip": "Chat met Eva"
+  },
+  "common": {
+    "brand": "Reachquix",
+    "brandTeam": "Reachquix-team",
+    "switchLanguage": "Taal wisselen",
+    "mainNavigation": "Hoofdnavigatie",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "closeChat": "Chat sluiten",
+    "sendMessage": "Bericht verzenden"
+  },
+  "notFound": {
+    "logPrefix": "404-fout: Niet-bestaande route:",
+    "message": "Oeps! Pagina niet gevonden",
+    "returnHome": "Terug naar home"
+  },
+  "admin": {
+    "loading": "Laden...",
+    "panel": "Adminpaneel",
+    "logout": "Uitloggen",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "blog": "Blogposts",
+      "eva": "Eva chatbot Q&A",
+      "messages": "Contactberichten",
+      "waitlist": "Wachtlijst e-mails"
+    }
+  },
+  "adminLogin": {
+    "panel": "Adminpaneel",
+    "email": "E-mail",
+    "password": "Wachtwoord",
+    "submit": "Inloggen op admin",
+    "loggingIn": "Inloggen...",
+    "error": "Toegang geweigerd. Alleen beheerders."
+  },
+  "adminDashboard": {
+    "pageTitle": "Dashboard",
+    "recentMessagesTitle": "Recente contactberichten",
+    "recentWaitlistTitle": "Recente wachtlijst-inschrijvingen",
+    "emptyMessages": "Nog geen berichten.",
+    "emptyWaitlist": "Nog geen inschrijvingen.",
+    "stats": {
+      "totalPosts": "Totaal blogposts",
+      "publishedPosts": "Gepubliceerde posts",
+      "conversations": "Eva-gesprekken",
+      "waitlist": "Wachtlijst-inschrijvingen"
+    }
+  },
+  "adminBlog": {
+    "pageTitle": "Blogposts",
+    "newButton": "Nieuwe post",
+    "newTitle": "Nieuwe post",
+    "editTitle": "Post bewerken",
+    "confirmDelete": "Deze post verwijderen?",
+    "editorPlaceholder": "Begin met schrijven...",
+    "promptImageUrl": "Voer afbeeldings-URL in:",
+    "titlePlaceholder": "Titel",
+    "slugPlaceholder": "Slug (automatisch)",
+    "authorPlaceholder": "Auteur",
+    "excerptPlaceholder": "Samenvatting (kort)",
+    "featuredImagePlaceholder": "Uitgelichte afbeelding URL",
+    "metaTitlePlaceholder": "Meta titel (SEO)",
+    "metaDescriptionPlaceholder": "Meta beschrijving (SEO)",
+    "published": "Gepubliceerd",
+    "saving": "Opslaan...",
+    "savePost": "Post opslaan",
+    "saveAndPublish": "Opslaan & publiceren",
+    "colTitle": "Titel",
+    "colCategory": "Categorie",
+    "colStatus": "Status",
+    "colDate": "Datum",
+    "colActions": "Acties",
+    "statusPublished": "Gepubliceerd",
+    "statusDraft": "Concept",
+    "empty": "Nog geen blogposts."
+  },
+  "adminQa": {
+    "pageTitle": "Eva chatbot",
+    "addButton": "Q&A toevoegen",
+    "tabQa": "Q&A-paren",
+    "tabConversations": "Gesprekken",
+    "newTitle": "Nieuwe Q&A",
+    "editTitle": "Q&A bewerken",
+    "questionPlaceholder": "Vraag",
+    "answerPlaceholder": "Antwoord",
+    "save": "Q&A opslaan",
+    "saving": "Opslaan...",
+    "confirmDelete": "Deze Q&A verwijderen?",
+    "tableQuestion": "Vraag",
+    "tableAnswer": "Antwoord",
+    "tableCategory": "Categorie",
+    "tableActions": "Acties",
+    "tableTime": "Tijd",
+    "tableVisitor": "Bezoekersbericht",
+    "tableResponse": "Eva-antwoord",
+    "emptyQa": "Nog geen Q&A-paren.",
+    "emptyConversations": "Nog geen gesprekken.",
+    "categories": {
+      "general": "Algemeen",
+      "pricing": "Prijzen",
+      "features": "Functies",
+      "technical": "Technisch",
+      "gettingStarted": "Aan de slag"
+    }
+  },
+  "adminMessages": {
+    "pageTitle": "Contactberichten",
+    "back": "Terug naar berichten",
+    "markRead": "Markeer als gelezen",
+    "markReplied": "Markeer als beantwoord",
+    "from": "Van:",
+    "company": "Bedrijf:",
+    "date": "Datum:",
+    "replyViaEmail": "Beantwoord via e-mail",
+    "colName": "Naam",
+    "colEmail": "E-mail",
+    "colSubject": "Onderwerp",
+    "colDate": "Datum",
+    "colStatus": "Status",
+    "statusReplied": "Beantwoord",
+    "statusRead": "Gelezen",
+    "statusNew": "Nieuw",
+    "empty": "Nog geen berichten."
+  },
+  "adminWaitlist": {
+    "pageTitle": "Wachtlijst-inschrijvingen",
+    "colEmail": "E-mail",
+    "colSource": "Bron",
+    "colDate": "Datum",
+    "empty": "Nog geen inschrijvingen."
   }
 }
