@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Home, Users, Send, BarChart3, Mail, ArrowUp, Check, Zap } from "lucide-react";
+import { Shield, Home, Users, Send, BarChart3, Mail, ArrowUp, Check, Zap, Table, Bot } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const HeroDashboard = () => {
