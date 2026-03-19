@@ -35,9 +35,9 @@
     "row3Status": "Hot Lead"
   },
   "stats": {
-    "emailsSent": "Emails Delivered Daily",
+    "emailsSent": "Emails Delivered & Counting",
     "leadsManaged": "Active Leads Managed",
-    "replyRate": "Sequences Running Right Now"
+    "replyRate": "Average Delivery Rate"
   },
   "logoBar": {
     "trusted": "Trusted by businesses across UAE, Saudi Arabia, Egypt and beyond"
