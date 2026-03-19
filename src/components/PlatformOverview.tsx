@@ -7,7 +7,7 @@ const PlatformOverview = () => {
   const pillars = [
     { icon: Mail, title: t("platform.emailTitle"), desc: t("platform.emailDesc") },
     { icon: Users, title: t("platform.crmTitle"), desc: t("platform.crmDesc") },
-    { icon: Sheet, title: t("platform.sheetsTitle"), desc: t("platform.sheetsDesc") },
+    { icon: Globe, title: t("platform.sheetsTitle"), desc: t("platform.sheetsDesc") },
   ];
 
   return (

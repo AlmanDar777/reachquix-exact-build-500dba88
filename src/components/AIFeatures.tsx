@@ -31,7 +31,7 @@ const AIFeatures = () => {
       desc: t("aiFeatures.f5Desc"),
     },
     {
-      icon: Globe,
+      icon: Search,
       title: t("aiFeatures.f6Title"),
       desc: t("aiFeatures.f6Desc"),
     },
