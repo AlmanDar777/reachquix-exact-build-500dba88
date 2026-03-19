@@ -45,7 +45,10 @@ const Navbar = () => {
           <a
             key={link.label}
             href={link.href.replace("/", "")}
-            onClick={(e) => { e.preventDefault(); handleClick(link.href); }}
+            onClick={(e) => {
+              e.preventDefault();
+              handleClick(link.href);
+            }}
             className={baseClass}
           >
             {link.label}
@@ -84,14 +87,13 @@ const Navbar = () => {
       transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
       className="fixed top-0 left-0 right-0 z-[1000] h-[72px] flex items-center bg-primary"
       role="navigation"
-      aria-label="Main navigation"
+      aria-label={t("common.mainNavigation")}
     >
       <div className="w-full max-w-[1200px] mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="font-heading text-[22px] text-primary-foreground tracking-tight">
-          Reachquix
+          {t("common.brand")}
         </Link>
 
-        {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => renderLink(link))}
         </div>
@@ -109,17 +111,15 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
         <button
           className="lg:hidden text-primary-foreground p-2 min-w-[44px] min-h-[44px] flex items-center justify-center cursor-pointer"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          aria-label={mobileOpen ? t("common.closeMenu") : t("common.openMenu")}
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}

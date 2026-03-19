@@ -244,7 +244,8 @@
     "termsOfService": "Términos de Servicio",
     "cookiePolicy": "Política de Cookies",
     "gdprCompliance": "Cumplimiento GDPR",
-    "security": "Seguridad"
+    "security": "Seguridad",
+    "srTitle": "Reachquix — Plataforma integral de outreach y ventas para MENA"
   },
   "featuresPage": {
     "label": "CARACTERÍSTICAS",
@@ -354,7 +355,15 @@
     "readMore": "Leer Más",
     "all": "Todos",
     "noPostsYet": "Aún no hay publicaciones. ¡Vuelve pronto!",
-    "cta": "¿Quieres resultados así? Empieza gratis hoy →"
+    "cta": "¿Quieres resultados así? Empieza gratis hoy →",
+    "categories": {
+      "emailMarketing": "Email Marketing",
+      "salesOutreach": "Prospección de ventas",
+      "crmTips": "Consejos de CRM",
+      "menaBusiness": "Negocios MENA",
+      "productUpdates": "Novedades del producto",
+      "caseStudies": "Casos de éxito"
+    }
   },
   "login": {
     "panelTitle": "Outreach en piloto automático.\nCrecimiento bajo demanda.",
@@ -378,7 +387,13 @@
   },
   "signup": {
     "panelTitle": "Empieza a cerrar más tratos hoy.",
-    "benefits": ["Prueba gratuita de 14 días en plan Crecimiento", "Sin tarjeta de crédito", "Configuración en menos de 5 minutos", "Google Sheets conectado en segundos", "Cancela cuando quieras — sin preguntas"],
+    "benefits": [
+      "Prueba gratuita de 14 días en plan Crecimiento",
+      "Sin tarjeta de crédito",
+      "Configuración en menos de 5 minutos",
+      "Google Sheets conectado en segundos",
+      "Cancela cuando quieras — sin preguntas"
+    ],
     "testimonial": "Reachquix automatizó todo nuestro outreach. La tasa de respuesta se triplicó en 30 días.",
     "testimonialAuthor": "— Ahmed Al Mansoori, Dubai",
     "getStarted": "Empieza gratis",
@@ -397,7 +412,8 @@
     "hasAccount": "¿Ya tienes cuenta?",
     "loginLink": "Inicia sesión →",
     "optional": "Opcional",
-    "minPassword": "Mín. 8 caracteres"
+    "minPassword": "Mín. 8 caracteres",
+    "namePlaceholder": "Nombre completo"
   },
   "eva": {
     "welcome": "¡Hola! Soy Eva, tu asistente de Reachquix. Puedo ayudarte con preguntas sobre nuestra plataforma, precios, características y cómo empezar. ¿Qué te gustaría saber?",
@@ -406,5 +422,136 @@
     "online": "En línea",
     "fallback": "¡Gran pregunta! Por favor escríbenos a support@reachquix.com o deja tu correo y te contactaremos pronto.",
     "tooltip": "Habla con Eva"
+  },
+  "common": {
+    "brand": "Reachquix",
+    "brandTeam": "Equipo Reachquix",
+    "switchLanguage": "Cambiar idioma",
+    "mainNavigation": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "closeChat": "Cerrar chat",
+    "sendMessage": "Enviar mensaje"
+  },
+  "notFound": {
+    "logPrefix": "Error 404: Ruta inexistente:",
+    "message": "¡Ups! Página no encontrada",
+    "returnHome": "Volver al inicio"
+  },
+  "admin": {
+    "loading": "Cargando...",
+    "panel": "Panel de administración",
+    "logout": "Cerrar sesión",
+    "tabs": {
+      "dashboard": "Panel",
+      "blog": "Entradas del blog",
+      "eva": "Preguntas y respuestas de Eva",
+      "messages": "Mensajes de contacto",
+      "waitlist": "Correos de lista de espera"
+    }
+  },
+  "adminLogin": {
+    "panel": "Panel de administración",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Entrar al panel",
+    "loggingIn": "Iniciando sesión...",
+    "error": "Acceso denegado. Solo administradores."
+  },
+  "adminDashboard": {
+    "pageTitle": "Panel",
+    "recentMessagesTitle": "Mensajes de contacto recientes",
+    "recentWaitlistTitle": "Registros recientes de lista de espera",
+    "emptyMessages": "Aún no hay mensajes.",
+    "emptyWaitlist": "Aún no hay registros.",
+    "stats": {
+      "totalPosts": "Total de posts",
+      "publishedPosts": "Posts publicados",
+      "conversations": "Conversaciones de Eva",
+      "waitlist": "Registros en espera"
+    }
+  },
+  "adminBlog": {
+    "pageTitle": "Entradas del blog",
+    "newButton": "Nuevo post",
+    "newTitle": "Nuevo post",
+    "editTitle": "Editar post",
+    "confirmDelete": "¿Eliminar este post?",
+    "editorPlaceholder": "Empieza a escribir tu post...",
+    "promptImageUrl": "Introduce URL de imagen:",
+    "titlePlaceholder": "Título",
+    "slugPlaceholder": "Slug (automático)",
+    "authorPlaceholder": "Autor",
+    "excerptPlaceholder": "Extracto (resumen corto)",
+    "featuredImagePlaceholder": "URL de imagen destacada",
+    "metaTitlePlaceholder": "Meta título (SEO)",
+    "metaDescriptionPlaceholder": "Meta descripción (SEO)",
+    "published": "Publicado",
+    "saving": "Guardando...",
+    "savePost": "Guardar post",
+    "saveAndPublish": "Guardar y publicar",
+    "colTitle": "Título",
+    "colCategory": "Categoría",
+    "colStatus": "Estado",
+    "colDate": "Fecha",
+    "colActions": "Acciones",
+    "statusPublished": "Publicado",
+    "statusDraft": "Borrador",
+    "empty": "Aún no hay posts."
+  },
+  "adminQa": {
+    "pageTitle": "Chatbot Eva",
+    "addButton": "Agregar Q&A",
+    "tabQa": "Pares Q&A",
+    "tabConversations": "Conversaciones",
+    "newTitle": "Nuevo Q&A",
+    "editTitle": "Editar Q&A",
+    "questionPlaceholder": "Pregunta",
+    "answerPlaceholder": "Respuesta",
+    "save": "Guardar Q&A",
+    "saving": "Guardando...",
+    "confirmDelete": "¿Eliminar este Q&A?",
+    "tableQuestion": "Pregunta",
+    "tableAnswer": "Respuesta",
+    "tableCategory": "Categoría",
+    "tableActions": "Acciones",
+    "tableTime": "Hora",
+    "tableVisitor": "Mensaje del visitante",
+    "tableResponse": "Respuesta de Eva",
+    "emptyQa": "Aún no hay pares Q&A.",
+    "emptyConversations": "Aún no hay conversaciones.",
+    "categories": {
+      "general": "General",
+      "pricing": "Precios",
+      "features": "Funciones",
+      "technical": "Técnico",
+      "gettingStarted": "Primeros pasos"
+    }
+  },
+  "adminMessages": {
+    "pageTitle": "Mensajes de contacto",
+    "back": "Volver a mensajes",
+    "markRead": "Marcar como leído",
+    "markReplied": "Marcar como respondido",
+    "from": "De:",
+    "company": "Empresa:",
+    "date": "Fecha:",
+    "replyViaEmail": "Responder por email",
+    "colName": "Nombre",
+    "colEmail": "Email",
+    "colSubject": "Asunto",
+    "colDate": "Fecha",
+    "colStatus": "Estado",
+    "statusReplied": "Respondido",
+    "statusRead": "Leído",
+    "statusNew": "Nuevo",
+    "empty": "Aún no hay mensajes."
+  },
+  "adminWaitlist": {
+    "pageTitle": "Registros de lista de espera",
+    "colEmail": "Email",
+    "colSource": "Origen",
+    "colDate": "Fecha",
+    "empty": "Aún no hay registros."
   }
 }

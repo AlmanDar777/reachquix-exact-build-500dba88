@@ -11,7 +11,7 @@ const languages = [
 ];
 
 const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -40,7 +40,7 @@ const LanguageSwitcher = ({ mobile = false }: { mobile?: boolean }) => {
             ? "font-body font-medium text-[16px] text-white"
             : "font-body font-medium text-[15px] text-white/90 hover:text-white"
         }`}
-        aria-label="Switch language"
+        aria-label={t("common.switchLanguage")}
       >
         <Globe size={20} />
         <span>{current.short}</span>

@@ -15,7 +15,7 @@
     "subtitle": "ريتشكويكس هي منصة التواصل الشاملة التي ترسل رسائلك الباردة، وتتابع في الوقت المناسب تماماً، وتكتشف كل رد فوراً، وتدير عملاءك المحتملين في نظام CRM مدمج — حتى تتوقف عن الملاحقة وتبدأ في إتمام الصفقات.",
     "cta": "ابدأ مجاناً ←",
     "demo": "شاهد العرض",
-    "noCreditCard": "لا حاجة لبطاقة ائتمان",
+    "trustLine": "✓ Zero setup fees  ✓ Live in 5 minutes  ✓ No contracts ever",
     "euRegistered": "مسجلة في جمهورية إستونيا، الاتحاد الأوروبي",
     "dashboardTitle": "الحملات النشطة",
     "dashboardRunning": "3 قيد التشغيل",
@@ -51,7 +51,8 @@
     "crmTitle": "نظام CRM مدمج",
     "crmDesc": "كل عميل محتمل، كل محادثة، كل صفقة — منظمة في مكان واحد. تتبع خط أنابيبك بالكامل من أول بريد إلكتروني إلى العقد الموقع.",
     "sheetsTitle": "مزامنة مباشرة مع Google Sheets",
-    "sheetsDesc": "أداة التواصل الوحيدة التي تتصل مباشرة بجدول بيانات Google الخاص بك — مباشرة. بدون تصدير CSV. بدون تحميلات يدوية."
+    "sheetsDesc": "أداة التواصل الوحيدة التي تتصل مباشرة بجدول بيانات Google الخاص بك — مباشرة. بدون تصدير CSV. بدون تحميلات يدوية.",
+    "learnMore": "Show me how →"
   },
   "howItWorks": {
     "label": "كيف يعمل",
@@ -68,12 +69,14 @@
     "step3Mockup": "لوحة تحكم الحملة",
     "step4Title": "أدِر وأغلق",
     "step4Desc": "كل رد يصل مباشرة إلى نظام CRM المدمج مع المحادثة الكاملة مرفقة. حرّك العملاء المحتملين عبر خط الأنابيب.",
-    "step4Mockup": "خط أنابيب المبيعات"
+    "step4Mockup": "خط أنابيب المبيعات",
+    "bottomCta": "I'm Ready — Start My Free Account →"
   },
   "emailFeatures": {
     "label": "أتمتة البريد الإلكتروني",
     "title": "تواصل يعمل أثناء نومك",
     "subtitle": "أعد تسلسلاتك مرة واحدة. ريتشكويكس يدير عملية التواصل بالكامل تلقائياً — 24 ساعة في اليوم، 7 أيام في الأسبوع.",
+    "cta": "Stop Sending Manually. Start Automating. →",
     "f1Title": "تسلسلات ذكية متعددة الخطوات",
     "f1Desc": "أرسل ما يصل إلى 10 رسائل متابعة مؤقتة بشكل مثالي لكل جهة اتصال.",
     "f2Title": "اكتشاف فوري للردود",
@@ -91,6 +94,7 @@
     "label": "نظام CRM مدمج",
     "title": "توقف عن خسارة العملاء. ابدأ في إتمام الصفقات.",
     "subtitle": "معظم الشركات تخسر 40% من عملائها المحتملين ببساطة بسبب عدم المتابعة بشكل صحيح.",
+    "cta": "See Every Lead. Close Every Deal. →",
     "f1Title": "إدارة جهات اتصال كاملة",
     "f1Desc": "كل عميل محتمل يعيش في مكان منظم واحد. انظر التاريخ الكامل.",
     "f2Title": "خط أنابيب مرئي بالسحب والإفلات",
@@ -108,6 +112,7 @@
     "label": "لماذا ريتشكويكس",
     "title": "مبنية بشكل مختلف. مبنية لك.",
     "subtitle": "كل أداة بريد إلكتروني أخرى بُنيت من قبل أمريكيين، للأمريكيين. نحن بنينا ريتشكويكس للشركات في الإمارات ومنطقة الشرق الأوسط وشمال إفريقيا.",
+    "cta": "Switch to Reachquix Today — Free →",
     "comparisonIntro": "انظر بالضبط ما تحصل عليه مع ريتشكويكس مقابل المنافسة:",
     "featureCol": "الميزة",
     "f1": "مزامنة مباشرة مع Google Sheets",
@@ -180,6 +185,7 @@
   "testimonials": {
     "label": "محبوبة من قبل الشركات في الخليج",
     "title": "شركات حقيقية. نتائج حقيقية.",
+    "cta": "Join them — Start Free Today →",
     "t1Quote": "كنا نطارد 500 عميل محتمل يدوياً كل أسبوع. ريتشكويكس أتمتت كل شيء بين ليلة وضحاها. تضاعف معدل الردود ثلاث مرات في أول 30 يوماً.",
     "t1Name": "أحمد المنصوري",
     "t1Title": "مدير، وكالة عقارية — دبي، الإمارات",
@@ -193,6 +199,7 @@
   "trust": {
     "label": "مبنية بثقة",
     "title": "أمان على مستوى المؤسسات. سعر صديق للشركات الناشئة.",
+    "cta": "Your Data. Your Server. Your Rules. Start Free →",
     "c1Title": "مسجلة في الاتحاد الأوروبي",
     "c1Desc": "ريتشكويكس OÜ مسجلة بفخر في جمهورية إستونيا، الاتحاد الأوروبي.",
     "c2Title": "بياناتك تبقى ملكك",
@@ -237,7 +244,8 @@
     "termsOfService": "شروط الخدمة",
     "cookiePolicy": "سياسة ملفات تعريف الارتباط",
     "gdprCompliance": "امتثال GDPR",
-    "security": "الأمان"
+    "security": "الأمان",
+    "srTitle": "Reachquix — منصة متكاملة للتواصل والمبيعات في الإمارات والمنطقة"
   },
   "featuresPage": {
     "label": "المميزات",
@@ -346,7 +354,16 @@
     "subtitle": "رؤى ونصائح واستراتيجيات للتواصل التجاري.",
     "readMore": "اقرأ المزيد",
     "all": "الكل",
-    "noPostsYet": "لا توجد مقالات بعد. تحقق قريباً!"
+    "noPostsYet": "لا توجد مقالات بعد. تحقق قريباً!",
+    "cta": "Want results like these? Start free today →",
+    "categories": {
+      "emailMarketing": "التسويق عبر البريد",
+      "salesOutreach": "التواصل البيعي",
+      "crmTips": "نصائح CRM",
+      "menaBusiness": "أعمال الشرق الأوسط",
+      "productUpdates": "تحديثات المنتج",
+      "caseStudies": "دراسات حالة"
+    }
   },
   "login": {
     "panelTitle": "تواصل تلقائي.\nنمو عند الطلب.",
@@ -364,11 +381,19 @@
     "submit": "تسجيل الدخول",
     "google": "المتابعة مع Google",
     "noAccount": "ليس لديك حساب؟",
-    "signupLink": "سجل مجاناً ←"
+    "signupLink": "سجل مجاناً ←",
+    "or": "or",
+    "and": "and"
   },
   "signup": {
     "panelTitle": "ابدأ في إتمام المزيد من الصفقات اليوم.",
-    "benefits": ["تجربة مجانية 14 يوماً على خطة النمو", "بدون بطاقة ائتمان", "الإعداد في أقل من 5 دقائق", "Google Sheets متصل في ثوانٍ", "ألغِ في أي وقت — بدون أسئلة"],
+    "benefits": [
+      "تجربة مجانية 14 يوماً على خطة النمو",
+      "بدون بطاقة ائتمان",
+      "الإعداد في أقل من 5 دقائق",
+      "Google Sheets متصل في ثوانٍ",
+      "ألغِ في أي وقت — بدون أسئلة"
+    ],
     "testimonial": "ريتشكويكس أتمتت تواصلنا بالكامل. تضاعف معدل الردود ثلاث مرات في 30 يوماً.",
     "testimonialAuthor": "— أحمد المنصوري، دبي",
     "getStarted": "ابدأ مجاناً",
@@ -387,7 +412,8 @@
     "hasAccount": "لديك حساب بالفعل؟",
     "loginLink": "تسجيل الدخول ←",
     "optional": "اختياري",
-    "minPassword": "8 أحرف على الأقل"
+    "minPassword": "8 أحرف على الأقل",
+    "namePlaceholder": "الاسم الكامل"
   },
   "eva": {
     "welcome": "مرحباً! أنا إيفا، مساعدة ريتشكويكس. يمكنني مساعدتك في أسئلة حول منصتنا والأسعار والمميزات والبدء. ماذا تريد أن تعرف؟",
@@ -396,5 +422,136 @@
     "online": "متصلة",
     "fallback": "سؤال رائع! يرجى مراسلتنا على support@reachquix.com أو اترك بريدك الإلكتروني وسنعود إليك.",
     "tooltip": "تحدث مع إيفا"
+  },
+  "common": {
+    "brand": "Reachquix",
+    "brandTeam": "فريق Reachquix",
+    "switchLanguage": "تغيير اللغة",
+    "mainNavigation": "التنقل الرئيسي",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "closeChat": "إغلاق الدردشة",
+    "sendMessage": "إرسال الرسالة"
+  },
+  "notFound": {
+    "logPrefix": "خطأ 404: محاولة الوصول إلى مسار غير موجود:",
+    "message": "عذرًا! الصفحة غير موجودة",
+    "returnHome": "العودة للرئيسية"
+  },
+  "admin": {
+    "loading": "جارٍ التحميل...",
+    "panel": "لوحة الإدارة",
+    "logout": "تسجيل الخروج",
+    "tabs": {
+      "dashboard": "لوحة المعلومات",
+      "blog": "مقالات المدونة",
+      "eva": "أسئلة وأجوبة Eva",
+      "messages": "رسائل التواصل",
+      "waitlist": "بريد قائمة الانتظار"
+    }
+  },
+  "adminLogin": {
+    "panel": "لوحة الإدارة",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "submit": "تسجيل الدخول للإدارة",
+    "loggingIn": "جارٍ تسجيل الدخول...",
+    "error": "تم رفض الوصول. للمسؤولين فقط."
+  },
+  "adminDashboard": {
+    "pageTitle": "لوحة المعلومات",
+    "recentMessagesTitle": "أحدث رسائل التواصل",
+    "recentWaitlistTitle": "أحدث اشتراكات قائمة الانتظار",
+    "emptyMessages": "لا توجد رسائل بعد.",
+    "emptyWaitlist": "لا توجد اشتراكات بعد.",
+    "stats": {
+      "totalPosts": "إجمالي المقالات",
+      "publishedPosts": "المقالات المنشورة",
+      "conversations": "محادثات Eva",
+      "waitlist": "اشتراكات الانتظار"
+    }
+  },
+  "adminBlog": {
+    "pageTitle": "مقالات المدونة",
+    "newButton": "مقال جديد",
+    "newTitle": "مقال جديد",
+    "editTitle": "تعديل المقال",
+    "confirmDelete": "حذف هذا المقال؟",
+    "editorPlaceholder": "ابدأ بكتابة المقال...",
+    "promptImageUrl": "أدخل رابط الصورة:",
+    "titlePlaceholder": "العنوان",
+    "slugPlaceholder": "الرابط (تلقائي)",
+    "authorPlaceholder": "الكاتب",
+    "excerptPlaceholder": "ملخص قصير",
+    "featuredImagePlaceholder": "رابط الصورة البارزة",
+    "metaTitlePlaceholder": "عنوان SEO",
+    "metaDescriptionPlaceholder": "وصف SEO",
+    "published": "منشور",
+    "saving": "جارٍ الحفظ...",
+    "savePost": "حفظ المقال",
+    "saveAndPublish": "حفظ ونشر",
+    "colTitle": "العنوان",
+    "colCategory": "الفئة",
+    "colStatus": "الحالة",
+    "colDate": "التاريخ",
+    "colActions": "إجراءات",
+    "statusPublished": "منشور",
+    "statusDraft": "مسودة",
+    "empty": "لا توجد مقالات بعد."
+  },
+  "adminQa": {
+    "pageTitle": "روبوت Eva",
+    "addButton": "إضافة سؤال وجواب",
+    "tabQa": "أزواج سؤال/جواب",
+    "tabConversations": "المحادثات",
+    "newTitle": "سؤال/جواب جديد",
+    "editTitle": "تعديل سؤال/جواب",
+    "questionPlaceholder": "السؤال",
+    "answerPlaceholder": "الإجابة",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ...",
+    "confirmDelete": "حذف هذا السؤال/الجواب؟",
+    "tableQuestion": "السؤال",
+    "tableAnswer": "الإجابة",
+    "tableCategory": "الفئة",
+    "tableActions": "إجراءات",
+    "tableTime": "الوقت",
+    "tableVisitor": "رسالة الزائر",
+    "tableResponse": "رد Eva",
+    "emptyQa": "لا توجد أزواج بعد.",
+    "emptyConversations": "لا توجد محادثات بعد.",
+    "categories": {
+      "general": "عام",
+      "pricing": "الأسعار",
+      "features": "الميزات",
+      "technical": "تقني",
+      "gettingStarted": "البدء"
+    }
+  },
+  "adminMessages": {
+    "pageTitle": "رسائل التواصل",
+    "back": "العودة للرسائل",
+    "markRead": "وضع كمقروء",
+    "markReplied": "وضع كمُجاب",
+    "from": "من:",
+    "company": "الشركة:",
+    "date": "التاريخ:",
+    "replyViaEmail": "الرد عبر البريد",
+    "colName": "الاسم",
+    "colEmail": "البريد الإلكتروني",
+    "colSubject": "الموضوع",
+    "colDate": "التاريخ",
+    "colStatus": "الحالة",
+    "statusReplied": "تم الرد",
+    "statusRead": "مقروء",
+    "statusNew": "جديد",
+    "empty": "لا توجد رسائل بعد."
+  },
+  "adminWaitlist": {
+    "pageTitle": "اشتراكات قائمة الانتظار",
+    "colEmail": "البريد الإلكتروني",
+    "colSource": "المصدر",
+    "colDate": "التاريخ",
+    "empty": "لا توجد اشتراكات بعد."
   }
 }

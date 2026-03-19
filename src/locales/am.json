@@ -244,7 +244,8 @@
     "termsOfService": "የአገልግሎት ውል",
     "cookiePolicy": "የኩኪ ፖሊሲ",
     "gdprCompliance": "GDPR ተስማሚነት",
-    "security": "ደህንነት"
+    "security": "ደህንነት",
+    "srTitle": "Reachquix — ለMENA ገበያ የተዘጋጀ ሙሉ የሽያጭ እና outreach ፕላትፎርም"
   },
   "featuresPage": {
     "label": "ባህሪያት",
@@ -354,7 +355,15 @@
     "readMore": "ተጨማሪ አንብብ",
     "all": "ሁሉም",
     "noPostsYet": "ገና ብሎግ ጽሑፎች የሉም። በቅርቡ ይመልከቱ!",
-    "cta": "እንደዚህ ያሉ ውጤቶች ይፈልጋሉ? ዛሬ ነጻ ይጀምሩ →"
+    "cta": "እንደዚህ ያሉ ውጤቶች ይፈልጋሉ? ዛሬ ነጻ ይጀምሩ →",
+    "categories": {
+      "emailMarketing": "የኢሜይል ማርኬቲንግ",
+      "salesOutreach": "የሽያጭ አውትሪች",
+      "crmTips": "የCRM ምክሮች",
+      "menaBusiness": "የMENA ንግድ",
+      "productUpdates": "የምርት አዳዲስ ነገሮች",
+      "caseStudies": "የስኬት ጉዳይ ጥናቶች"
+    }
   },
   "login": {
     "panelTitle": "በራስ-ሰር ግንኙነት።\nበፍላጎት ላይ እድገት።",
@@ -378,7 +387,13 @@
   },
   "signup": {
     "panelTitle": "ዛሬ ተጨማሪ ስምምነቶችን መዝጋት ይጀምሩ።",
-    "benefits": ["በእድገት እቅድ 14 ቀን ነጻ ሙከራ", "ካርድ አያስፈልግም", "በ5 ደቂቃ ማዋቀር", "Google Sheets በሰከንዶች ተገናኝቷል", "በማንኛውም ጊዜ ይሰርዙ — ጥያቄ የለም"],
+    "benefits": [
+      "በእድገት እቅድ 14 ቀን ነጻ ሙከራ",
+      "ካርድ አያስፈልግም",
+      "በ5 ደቂቃ ማዋቀር",
+      "Google Sheets በሰከንዶች ተገናኝቷል",
+      "በማንኛውም ጊዜ ይሰርዙ — ጥያቄ የለም"
+    ],
     "testimonial": "ሪችኩዊክስ ሙሉ ግንኙነታችንን አውቶሜት አደረገ። የምላሽ መጠን በ30 ቀናት ሦስት እጥፍ ሆነ።",
     "testimonialAuthor": "— አህመድ አል ማንሱሪ፣ ዱባይ",
     "getStarted": "ነጻ ይጀምሩ",
@@ -397,7 +412,8 @@
     "hasAccount": "ቀድሞ መለያ አለዎት?",
     "loginLink": "ይግቡ →",
     "optional": "ምርጫ",
-    "minPassword": "ቢያንስ 8 ቁምፊዎች"
+    "minPassword": "ቢያንስ 8 ቁምፊዎች",
+    "namePlaceholder": "ሙሉ ስም"
   },
   "eva": {
     "welcome": "ሰላም! እኔ ኢቫ ነኝ፣ የሪችኩዊክስ ረዳትዎ። ስለ መድረካችን፣ ዋጋ፣ ባህሪያት እና መጀመር ጥያቄዎችን ልረዳዎ እችላለሁ። ምን ማወቅ ይፈልጋሉ?",
@@ -406,5 +422,136 @@
     "online": "በመስመር ላይ",
     "fallback": "ጥሩ ጥያቄ! እባክዎ support@reachquix.com ላይ ኢሜይል ይላኩልን ወይም ኢሜይልዎን ይተዉ እና እንመለሳለን።",
     "tooltip": "ከኢቫ ጋር ተወያይ"
+  },
+  "common": {
+    "brand": "Reachquix",
+    "brandTeam": "Reachquix ቡድን",
+    "switchLanguage": "ቋንቋ ቀይር",
+    "mainNavigation": "ዋና አሰሳ",
+    "openMenu": "ሜኑ ክፈት",
+    "closeMenu": "ሜኑ ዝጋ",
+    "closeChat": "ቻት ዝጋ",
+    "sendMessage": "መልዕክት ላክ"
+  },
+  "notFound": {
+    "logPrefix": "404 ስህተት: ያልተገኘ መንገድ:",
+    "message": "ይቅርታ! ገጹ አልተገኘም",
+    "returnHome": "ወደ መነሻ ተመለስ"
+  },
+  "admin": {
+    "loading": "በመጫን ላይ...",
+    "panel": "የአስተዳደር ፓነል",
+    "logout": "ውጣ",
+    "tabs": {
+      "dashboard": "ዳሽቦርድ",
+      "blog": "የብሎግ ፖስቶች",
+      "eva": "Eva Q&A",
+      "messages": "የእውቂያ መልዕክቶች",
+      "waitlist": "የመጠባበቂያ ኢሜይሎች"
+    }
+  },
+  "adminLogin": {
+    "panel": "የአስተዳደር ፓነል",
+    "email": "ኢሜይል",
+    "password": "የይለፍ ቃል",
+    "submit": "ወደ አስተዳደር ግባ",
+    "loggingIn": "በመግባት ላይ...",
+    "error": "መዳረሻ ተከልክሏል። ለአስተዳዳሪዎች ብቻ።"
+  },
+  "adminDashboard": {
+    "pageTitle": "ዳሽቦርድ",
+    "recentMessagesTitle": "የቅርብ ጊዜ የእውቂያ መልዕክቶች",
+    "recentWaitlistTitle": "የቅርብ ጊዜ የመጠባበቂያ ምዝገባዎች",
+    "emptyMessages": "እስካሁን መልዕክት የለም።",
+    "emptyWaitlist": "እስካሁን ምዝገባ የለም።",
+    "stats": {
+      "totalPosts": "ጠቅላላ ብሎግ ፖስቶች",
+      "publishedPosts": "የታተሙ ፖስቶች",
+      "conversations": "የEva ውይይቶች",
+      "waitlist": "የመጠባበቂያ ምዝገባዎች"
+    }
+  },
+  "adminBlog": {
+    "pageTitle": "የብሎግ ፖስቶች",
+    "newButton": "አዲስ ፖስት",
+    "newTitle": "አዲስ ፖስት",
+    "editTitle": "ፖስት አርትዕ",
+    "confirmDelete": "ይህን ፖስት ማጥፋት ይፈልጋሉ?",
+    "editorPlaceholder": "ብሎግዎን ይጀምሩ...",
+    "promptImageUrl": "የምስል URL ያስገቡ:",
+    "titlePlaceholder": "ርዕስ",
+    "slugPlaceholder": "Slug (ራስ-ሰር)",
+    "authorPlaceholder": "ደራሲ",
+    "excerptPlaceholder": "አጭር ማጠቃለያ",
+    "featuredImagePlaceholder": "የተመረጠ ምስል URL",
+    "metaTitlePlaceholder": "Meta Title (SEO)",
+    "metaDescriptionPlaceholder": "Meta Description (SEO)",
+    "published": "ታትሟል",
+    "saving": "በማስቀመጥ ላይ...",
+    "savePost": "ፖስት አስቀምጥ",
+    "saveAndPublish": "አስቀምጥ እና አትም",
+    "colTitle": "ርዕስ",
+    "colCategory": "ምድብ",
+    "colStatus": "ሁኔታ",
+    "colDate": "ቀን",
+    "colActions": "ተግባሮች",
+    "statusPublished": "ታትሟል",
+    "statusDraft": "ረቂቅ",
+    "empty": "እስካሁን ብሎግ ፖስቶች የሉም።"
+  },
+  "adminQa": {
+    "pageTitle": "Eva ቻትቦት",
+    "addButton": "Q&A ጨምር",
+    "tabQa": "Q&A ጥንዶች",
+    "tabConversations": "ውይይቶች",
+    "newTitle": "አዲስ Q&A",
+    "editTitle": "Q&A አርትዕ",
+    "questionPlaceholder": "ጥያቄ",
+    "answerPlaceholder": "መልስ",
+    "save": "Q&A አስቀምጥ",
+    "saving": "በማስቀመጥ ላይ...",
+    "confirmDelete": "ይህን Q&A ማጥፋት ይፈልጋሉ?",
+    "tableQuestion": "ጥያቄ",
+    "tableAnswer": "መልስ",
+    "tableCategory": "ምድብ",
+    "tableActions": "ተግባሮች",
+    "tableTime": "ሰዓት",
+    "tableVisitor": "የጎብኚ መልዕክት",
+    "tableResponse": "የEva ምላሽ",
+    "emptyQa": "እስካሁን Q&A የለም።",
+    "emptyConversations": "እስካሁን ውይይት የለም።",
+    "categories": {
+      "general": "አጠቃላይ",
+      "pricing": "ዋጋ",
+      "features": "ባህሪያት",
+      "technical": "ቴክኒክ",
+      "gettingStarted": "መጀመር"
+    }
+  },
+  "adminMessages": {
+    "pageTitle": "የእውቂያ መልዕክቶች",
+    "back": "ወደ መልዕክቶች ተመለስ",
+    "markRead": "እንደተነበበ ምልክት",
+    "markReplied": "እንደተመለሰ ምልክት",
+    "from": "ከ:",
+    "company": "ኩባንያ:",
+    "date": "ቀን:",
+    "replyViaEmail": "በኢሜይል መልስ",
+    "colName": "ስም",
+    "colEmail": "ኢሜይል",
+    "colSubject": "ርዕስ",
+    "colDate": "ቀን",
+    "colStatus": "ሁኔታ",
+    "statusReplied": "ተመልሷል",
+    "statusRead": "ተነብቧል",
+    "statusNew": "አዲስ",
+    "empty": "እስካሁን መልዕክት የለም።"
+  },
+  "adminWaitlist": {
+    "pageTitle": "የመጠባበቂያ ምዝገባዎች",
+    "colEmail": "ኢሜይል",
+    "colSource": "ምንጭ",
+    "colDate": "ቀን",
+    "empty": "እስካሁን ምዝገባ የለም።"
   }
 }

@@ -1,3 +1,4 @@
+import { forwardRef } from "react";
 import { Linkedin, Instagram, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -16,8 +17,10 @@ const socialIcons = [
   },
 ];
 
-const Footer = () => {
+const Footer = forwardRef<HTMLElement>((_, ref) => {
   const { t } = useTranslation();
+  const brand = t("common.brand");
+
   const footerLinks = {
     [t("footer.product")]: [
       { label: t("footer.features"), href: "/features" },
@@ -52,10 +55,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="section-padding bg-secondary">
+    <footer ref={ref} className="section-padding bg-secondary">
       <div className="max-w-[1200px] mx-auto">
         <div className="mb-12">
-          <p className="font-heading text-[22px] text-white mb-2">Reachquix</p>
+          <p className="font-heading text-[22px] text-white mb-2">{brand}</p>
           <p className="font-body text-[14px]" style={{ color: "#64748B" }}>{t("footer.tagline")}</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
@@ -86,10 +89,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <h1 className="sr-only">Reachquix — All-in-One Sales Outreach Platform for UAE & MENA Businesses</h1>
+        <h1 className="sr-only">{t("footer.srTitle")}</h1>
       </div>
     </footer>
   );
-};
+});
+
+Footer.displayName = "Footer";
 
 export default Footer;
