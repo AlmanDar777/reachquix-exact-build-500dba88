@@ -47,7 +47,7 @@ const Signup = () => {
             <div className="space-y-4">
               <div>
                 <label className="font-body text-[14px] font-medium text-secondary block mb-1.5">{t("signup.name")} *</label>
-                <input type="text" placeholder="John Doe" className="w-full px-4 py-3 rounded-lg border border-border font-body text-[16px] focus:outline-none focus:ring-2 focus:ring-primary" />
+                <input type="text" placeholder={t("signup.namePlaceholder")} className="w-full px-4 py-3 rounded-lg border border-border font-body text-[16px] focus:outline-none focus:ring-2 focus:ring-primary" />
               </div>
               <div>
                 <label className="font-body text-[14px] font-medium text-secondary block mb-1.5">{t("signup.email")} *</label>
