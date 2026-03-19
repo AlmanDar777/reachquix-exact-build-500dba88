@@ -145,10 +145,10 @@ const HeroDashboard = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 1.6 }}
-        className="hidden md:flex absolute z-[25] bg-white rounded-xl"
+        className="hidden md:flex absolute z-[22] bg-white rounded-xl"
         style={{
           top: "-15px",
-          left: "-25px",
+          left: "0px",
           padding: "12px 16px",
           width: "190px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
