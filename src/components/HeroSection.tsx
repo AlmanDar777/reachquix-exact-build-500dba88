@@ -205,8 +205,8 @@ const HeroDashboard = () => {
         transition={{ duration: 0.5, delay: 2.0 }}
         className="hidden md:block absolute z-[25] bg-white rounded-xl"
         style={{
-          bottom: "-20px",
-          right: "-15px",
+          bottom: "-30px",
+          right: "-10px",
           padding: "12px 16px",
           width: "220px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
