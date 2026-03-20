@@ -16,6 +16,12 @@ import Signup from "./pages/Signup.tsx";
 import Admin from "./pages/Admin.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import CRM from "./pages/CRM.tsx";
+import HelpCenter from "./pages/HelpCenter.tsx";
+import Privacy from "./pages/Privacy.tsx";
+import Terms from "./pages/Terms.tsx";
+import GDPRPage from "./pages/GDPR.tsx";
+import Docs from "./pages/Docs.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
