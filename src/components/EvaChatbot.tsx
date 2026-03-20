@@ -89,7 +89,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
         <>
           {/* Speech bubble */}
           <div
-            className={`fixed z-[9999] max-sm:bottom-[88px] max-sm:right-1/2 max-sm:translate-x-1/2 bottom-8 right-[88px] ${shouldBounce ? "eva-bubble-bounce" : ""}`}
+            className={`fixed z-[9999] bottom-8 right-[88px] max-sm:bottom-[76px] max-sm:right-6 max-sm:left-auto max-sm:translate-x-0 ${shouldBounce ? "eva-bubble-bounce" : ""}`}
             style={{
               animation: "evaFadeIn 500ms ease forwards",
             }}
