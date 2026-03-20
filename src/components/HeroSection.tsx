@@ -266,22 +266,6 @@ const HeroSection = () => {
               <Shield size={16} />
               <span className="font-body text-[13px]">{t("hero.euRegistered")}</span>
             </motion.div>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.8 }} className="flex items-center gap-3 mt-4">
-              <div className="flex -space-x-2">
-                {[
-                  { bg: "#0C6038", initial: "A" },
-                  { bg: "#6366F1", initial: "S" },
-                  { bg: "#F59E0B", initial: "R" },
-                  { bg: "#EF4444", initial: "M" },
-                  { bg: "#8B5CF6", initial: "K" },
-                ].map((a, i) => (
-                  <div key={i} className="w-8 h-8 rounded-full flex items-center justify-center border-2 border-white font-body text-[11px] font-medium text-white" style={{ backgroundColor: a.bg }}>
-                    {a.initial}
-                  </div>
-                ))}
-              </div>
-              <span className="font-body text-[13px] text-white/80">Join 2,500+ businesses in 50+ countries</span>
-            </motion.div>
           </div>
           <div className="flex-1 lg:w-1/2 lg:flex-none w-full flex justify-center lg:justify-end">
             <HeroDashboard />
