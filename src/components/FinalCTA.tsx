@@ -13,7 +13,7 @@ const FinalCTA = () => {
           <p className="font-body text-[16px] md:text-[18px] leading-[1.7] text-white/85 max-w-[600px] mx-auto mb-8">{t("finalCta.subtitle")}</p>
           <motion.div initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="flex flex-col sm:flex-row justify-center gap-4 mb-6">
             <a className="font-body font-medium text-[15px] px-8 py-3.5 rounded-lg cursor-pointer transition-all duration-200 text-center hover:shadow-lg" style={{ backgroundColor: "white", color: "#0C6038" }} href="/signup">{t("finalCta.cta")}</a>
-            <a href="#" className="font-body font-medium text-[15px] px-7 py-3 rounded-lg cursor-pointer transition-all duration-200 text-center border-2 border-white text-white hover:bg-white/10">{t("finalCta.demo")}</a>
+            <a href="/contact" className="font-body font-medium text-[15px] px-7 py-3 rounded-lg cursor-pointer transition-all duration-200 text-center border-2 border-white text-white hover:bg-white/10">{t("finalCta.demo")}</a>
           </motion.div>
           <p className="font-body text-[13px] text-white/75">{t("finalCta.note")}</p>
         </div>
