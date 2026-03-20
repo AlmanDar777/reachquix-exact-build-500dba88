@@ -20,33 +20,23 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
   const footerLinks = {
     [t("footer.product")]: [
       { label: t("footer.features"), href: "/features" },
-      { label: t("footer.crm"), href: "/#crm" },
+      { label: t("footer.crm"), href: "/crm" },
       { label: t("footer.pricing"), href: "/pricing" },
-      { label: t("footer.integrations"), href: "/features" },
-      { label: t("footer.changelog"), href: "#" },
-      { label: t("footer.apiDocs"), href: "#" },
     ],
     [t("footer.company")]: [
       { label: t("footer.aboutUs"), href: "/about" },
       { label: t("footer.blog"), href: "/blog" },
-      { label: t("footer.careers"), href: "#" },
-      { label: t("footer.press"), href: "#" },
       { label: t("footer.contact"), href: "/contact" },
-      { label: t("footer.partnerProgram"), href: "#" },
     ],
     [t("footer.resources")]: [
-      { label: t("footer.helpCenter"), href: "#" },
-      { label: t("footer.documentation"), href: "#" },
-      { label: t("footer.emailTemplates"), href: "#" },
-      { label: t("footer.videoTutorials"), href: "#" },
-      { label: t("footer.community"), href: "#" },
+      { label: t("footer.helpCenter"), href: "/contact" },
+      { label: t("footer.documentation"), href: "/contact" },
+      { label: t("footer.emailTemplates"), href: "/features" },
     ],
     [t("footer.legal")]: [
-      { label: t("footer.privacyPolicy"), href: "#" },
-      { label: t("footer.termsOfService"), href: "#" },
-      { label: t("footer.cookiePolicy"), href: "#" },
-      { label: t("footer.gdprCompliance"), href: "#" },
-      { label: t("footer.security"), href: "#" },
+      { label: t("footer.privacyPolicy"), href: "/privacy" },
+      { label: t("footer.termsOfService"), href: "/terms" },
+      { label: t("footer.gdprCompliance"), href: "/contact" },
     ],
   };
 
