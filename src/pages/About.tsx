@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Heart, Globe, Users, Shield } from "lucide-react";
+import { Target, Heart, Globe, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
