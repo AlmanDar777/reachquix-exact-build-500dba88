@@ -89,7 +89,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
         <>
           {/* Speech bubble */}
           <div
-            className={`fixed z-[9999] bottom-8 right-[88px] max-sm:bottom-[76px] max-sm:right-6 max-sm:left-auto max-sm:translate-x-0 ${shouldBounce ? "eva-bubble-bounce" : ""}`}
+            className={`fixed z-[9999] bottom-8 right-[88px] ${shouldBounce ? "eva-bubble-bounce" : ""}`}
             style={{
               animation: "evaFadeIn 500ms ease forwards",
             }}
@@ -111,7 +111,6 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
               Hi! I'm Eva 👋
               {/* Arrow pointing right (desktop) */}
               <span
-                className="max-sm:hidden"
                 style={{
                   position: "absolute",
                   top: "50%",
@@ -122,20 +121,6 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
                   borderTop: "6px solid transparent",
                   borderBottom: "6px solid transparent",
                   borderLeft: "6px solid #fff",
-                }}
-              />
-              {/* Arrow pointing down (mobile) */}
-              <span
-                className="hidden max-sm:block"
-                style={{
-                  position: "absolute",
-                  bottom: -6,
-                  right: 12,
-                  width: 0,
-                  height: 0,
-                  borderLeft: "6px solid transparent",
-                  borderRight: "6px solid transparent",
-                  borderTop: "6px solid #fff",
                 }}
               />
             </div>
