@@ -12,7 +12,7 @@
     "label": "AI-POWERED SALES OUTREACH PLATFORM",
     "title": "Send. Follow Up. Close.",
     "titleLine2": "All on Autopilot.",
-    "subtitle": "Reachquix is the all-in-one outreach platform that sends your cold emails across 50+ countries, follows up at exactly the right time, detects every reply instantly, and manages your leads in a built-in CRM — so you can stop chasing and start closing.",
+    "subtitle": "Reachquix is the AI-powered outreach platform used by sales teams, agencies, and businesses in 50+ countries. Send personalized cold emails at scale, follow up automatically, detect every reply instantly, and manage your entire pipeline in a built-in CRM — so you can stop chasing leads and start closing deals.",
     "cta": "Start Closing Deals — It's Free →",
     "demo": "See It In Action ▶",
     "trustLine": "✓ Zero setup fees  ✓ Live in 5 minutes  ✓ No contracts ever",
@@ -128,7 +128,7 @@
   "whyReachquix": {
     "label": "WHY REACHQUIX",
     "title": "Built different. Built for you.",
-    "subtitle": "Every other email tool was built by Americans, for Americans, priced for Silicon Valley. We built Reachquix for businesses in the UAE, MENA, and the Gulf — where deals are bigger, relationships matter more, and nobody has time to learn complicated software.",
+    "subtitle": "Every other email tool was built for one market. We built Reachquix for businesses everywhere — where deals matter, relationships come first, and nobody has time to learn complicated software.",
     "cta": "Switch to Reachquix Today — Free →",
     "comparisonIntro": "See exactly what you get with Reachquix vs the competition:",
     "featureCol": "Feature",
@@ -268,7 +268,7 @@
     "cookiePolicy": "Cookie Policy",
     "gdprCompliance": "GDPR Compliance",
     "security": "Security",
-    "srTitle": "Reachquix — All-in-One Sales Outreach Platform for UAE & MENA Businesses"
+    "srTitle": "Reachquix — All-in-One AI Sales Outreach Platform for Global Businesses"
   },
   "featuresPage": {
     "label": "FEATURES",
@@ -309,17 +309,17 @@
   },
   "about": {
     "label": "ABOUT US",
-    "title": "Built by people who understand your market.",
-    "subtitle": "We are not a Silicon Valley startup. We are a team based in Dubai, UAE — and we built Reachquix because we could not find a single outreach tool that actually worked for the Gulf market.",
+    "title": "Built for businesses that want to grow — anywhere in the world.",
+    "subtitle": "We are not a Silicon Valley startup. We are a team based in Dubai, UAE — and we built Reachquix because we could not find a single outreach tool that truly worked for international markets. So we built one.",
     "missionTitle": "Our Mission",
-    "missionText": "To give every business in the UAE and MENA region — from solo real estate agents to full-scale agencies — access to the same powerful outreach tools that Fortune 500 companies use. Without the Fortune 500 price tag.",
+    "missionText": "To give every business in the world — from solo founders to full-scale agencies — access to the same powerful AI outreach tools that Fortune 500 companies use. Without the Fortune 500 price tag.",
     "valuesTitle": "Our Values",
     "v1Title": "Customer First",
     "v1Desc": "Every feature we build starts with a real customer need. We listen to businesses in the Gulf and build exactly what they ask for.",
     "v2Title": "Simplicity Above All",
     "v2Desc": "If our software needs a manual, we have failed. Reachquix is designed to be used by anyone — from first-time entrepreneurs to seasoned sales teams.",
-    "v3Title": "Built for the Region",
-    "v3Desc": "Arabic support, local market understanding, real estate focus, WhatsApp integration — we build for how business actually works in the UAE and MENA.",
+    "v3Title": "Built for the World",
+    "v3Desc": "Multi-language AI support, global timezone intelligence, works in any market — we build for how business actually works everywhere in the world.",
     "v4Title": "Trust & Transparency",
     "v4Desc": "EU registered company. GDPR compliant. Your data stays yours. No hidden fees. No surprise charges. What you see is what you get.",
     "teamTitle": "The Team",
@@ -336,7 +336,7 @@
     "euDesc": "Reachquix OÜ is proudly registered in the Republic of Estonia, European Union — giving you the security and credibility of a fully regulated European company.",
     "euLocation": "Operations: Dubai, UAE · Registered Office: Tallinn, Estonia",
     "ctaTitle": "Ready to grow your business?",
-    "getStarted": "Be Part of the Story — Start Free →",
+    "getStarted": "Start Closing Deals — It is Free →",
     "contactUs": "Contact Us"
   },
   "contact": {

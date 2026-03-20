@@ -16,6 +16,12 @@ import Signup from "./pages/Signup.tsx";
 import Admin from "./pages/Admin.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import CRM from "./pages/CRM.tsx";
+import HelpCenter from "./pages/HelpCenter.tsx";
+import Privacy from "./pages/Privacy.tsx";
+import Terms from "./pages/Terms.tsx";
+import GDPRPage from "./pages/GDPR.tsx";
+import Docs from "./pages/Docs.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -34,11 +40,17 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/help-center" element={<HelpCenter />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/gdpr" element={<GDPRPage />} />
+          <Route path="/docs" element={<Docs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <EvaChatbot />

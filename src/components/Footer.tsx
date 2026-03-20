@@ -29,14 +29,14 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
       { label: t("footer.contact"), href: "/contact" },
     ],
     [t("footer.resources")]: [
-      { label: t("footer.helpCenter"), href: "/contact" },
-      { label: t("footer.documentation"), href: "/contact" },
+      { label: t("footer.helpCenter"), href: "/help-center" },
+      { label: t("footer.documentation"), href: "/docs" },
       { label: t("footer.emailTemplates"), href: "/features" },
     ],
     [t("footer.legal")]: [
       { label: t("footer.privacyPolicy"), href: "/privacy" },
       { label: t("footer.termsOfService"), href: "/terms" },
-      { label: t("footer.gdprCompliance"), href: "/contact" },
+      { label: t("footer.gdprCompliance"), href: "/gdpr" },
     ],
   };
 

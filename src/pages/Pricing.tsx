@@ -11,7 +11,7 @@ const Pricing = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const plans = [
-    { name: t("pricing.starter"), monthly: 29, annual: 23, sub: t("pricing.starterSub"), features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8")], cta: t("pricing.starterCta"), ctaStyle: "outline", popular: false },
+    { name: t("pricing.starter"), monthly: 29, annual: 23, sub: t("pricing.starterSub"), features: [t("pricing.starterF1"), t("pricing.starterF2"), t("pricing.starterF3"), t("pricing.starterF4"), t("pricing.starterF5"), t("pricing.starterF6"), t("pricing.starterF7"), t("pricing.starterF8"), t("pricing.starterF9"), t("pricing.starterF10"), t("pricing.starterF11")], cta: t("pricing.starterCta"), ctaStyle: "outline", popular: false },
     { name: t("pricing.growth"), monthly: 59, annual: 47, sub: t("pricing.growthSub"), features: [t("pricing.growthF1"), t("pricing.growthF2"), t("pricing.growthF3"), t("pricing.growthF4"), t("pricing.growthF5"), t("pricing.growthF6"), t("pricing.growthF7"), t("pricing.growthF8"), t("pricing.growthF9"), t("pricing.growthF10"), t("pricing.growthF11")], cta: t("pricing.growthCta"), ctaStyle: "primary", popular: true },
     { name: t("pricing.agency"), monthly: 99, annual: 79, sub: t("pricing.agencySub"), features: [t("pricing.agencyF1"), t("pricing.agencyF2"), t("pricing.agencyF3"), t("pricing.agencyF4"), t("pricing.agencyF5"), t("pricing.agencyF6"), t("pricing.agencyF7"), t("pricing.agencyF8"), t("pricing.agencyF9"), t("pricing.agencyF10")], cta: t("pricing.agencyCta"), ctaStyle: "dark", popular: false },
   ];
@@ -27,9 +27,9 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="pt-[72px]">
+      <main className="pt-[72px] flex-1">
         <section className="section-padding bg-primary">
           <div className="max-w-[1200px] mx-auto text-center">
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="font-heading text-[32px] md:text-[48px] text-white mb-4" style={{ textWrap: "balance" } as React.CSSProperties}>{t("pricingPage.title")}</motion.h1>
