@@ -10,8 +10,8 @@ const HeroDashboard = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.5, ease: [0.4, 0, 0.2, 1] }}
       className="relative w-full max-w-[440px] mx-auto"
-      style={{ padding: "40px 30px 50px 20px" }}
-    >
+      style={{ padding: "40px 30px 50px 20px" }}>
+      
       {/* Layer 1 — Main browser window */}
       <div className="relative z-[10] rounded-xl border border-white/20 bg-white/95 backdrop-blur-sm shadow-2xl overflow-hidden" style={{ animation: "float 3s ease-in-out infinite" }}>
         {/* Browser chrome */}
@@ -95,8 +95,8 @@ const HeroDashboard = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.0 }}
         className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border flex items-start gap-2 z-[20]"
-        style={{ top: "10px", right: "-10px", animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}
-      >
+        style={{ top: "10px", right: "-10px", animation: "float 3s ease-in-out 0.5s infinite", transform: "rotate(-2deg)" }}>
+        
         <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
           <Check size={12} style={{ color: "#0C6038" }} />
         </div>
@@ -112,8 +112,8 @@ const HeroDashboard = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 1.2 }}
         className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border flex items-start gap-2 z-[20]"
-        style={{ bottom: "20px", left: "-10px", animation: "float 3s ease-in-out 1s infinite" }}
-      >
+        style={{ bottom: "20px", left: "-10px", animation: "float 3s ease-in-out 1s infinite" }}>
+        
         <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "rgba(12,96,56,0.1)" }}>
           <Mail size={12} style={{ color: "#0C6038" }} />
         </div>
@@ -129,8 +129,8 @@ const HeroDashboard = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 1.4 }}
         className="absolute bg-white rounded-xl px-3 py-2 shadow-lg border border-border text-center md:hidden z-[20]"
-        style={{ top: "50%", right: "-5px", animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}
-      >
+        style={{ top: "50%", right: "-5px", animation: "float 3s ease-in-out 1.5s infinite", transform: "translateY(-50%)" }}>
+        
         <p className="font-body text-[9px] text-muted-foreground mb-0.5">{t("hero.deliveryRate")}</p>
         <div className="flex items-center gap-1 justify-center">
           <span className="font-heading text-[20px]" style={{ color: "#0C6038" }}>94%</span>
@@ -150,9 +150,9 @@ const HeroDashboard = () => {
           padding: "8px 10px",
           width: "160px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
-          animation: "float 3.5s ease-in-out 0.5s infinite",
-        }}
-      >
+          animation: "float 3.5s ease-in-out 0.5s infinite"
+        }}>
+        
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#0C6038" }}>
             <Table size={13} className="text-white" />
@@ -180,9 +180,9 @@ const HeroDashboard = () => {
           padding: "8px 12px",
           width: "130px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
-          animation: "float 3.5s ease-in-out 1s infinite",
-        }}
-      >
+          animation: "float 3.5s ease-in-out 1s infinite"
+        }}>
+        
         <p className="font-body text-[9px]" style={{ color: "#64748B" }}>Revenue</p>
         <p className="font-heading text-[20px] font-bold" style={{ color: "#0A0A0A" }}>$12,400</p>
         <div className="flex items-center gap-1">
@@ -190,9 +190,9 @@ const HeroDashboard = () => {
           <span className="font-body text-[8px] font-medium" style={{ color: "#0C6038" }}>+24% this month</span>
         </div>
         <div className="flex items-end gap-[2px] mt-1">
-          {[6, 10, 8, 14, 18].map((h, i) => (
-            <div key={i} className="w-2.5 rounded-sm" style={{ height: `${h}px`, backgroundColor: "#0C6038" }} />
-          ))}
+          {[6, 10, 8, 14, 18].map((h, i) =>
+          <div key={i} className="w-2.5 rounded-sm" style={{ height: `${h}px`, backgroundColor: "#0C6038" }} />
+          )}
         </div>
       </motion.div>
 
@@ -208,9 +208,9 @@ const HeroDashboard = () => {
           padding: "8px 10px",
           width: "175px",
           boxShadow: "0 8px 30px rgba(0,0,0,0.12)",
-          animation: "float 3.5s ease-in-out 1.5s infinite",
-        }}
-      >
+          animation: "float 3.5s ease-in-out 1.5s infinite"
+        }}>
+        
         <div className="flex items-center gap-1.5 mb-1">
           <Bot size={12} style={{ color: "#0C6038" }} />
           <span className="font-body text-[10px] font-semibold" style={{ color: "#0A0A0A" }}>AI Sequence Running</span>
@@ -231,8 +231,8 @@ const HeroDashboard = () => {
         </div>
         <p className="font-body text-[8px] mt-1" style={{ color: "#94A3B8" }}>Next send in 2 days</p>
       </motion.div>
-    </motion.div>
-  );
+    </motion.div>);
+
 };
 
 const HeroSection = () => {
@@ -252,7 +252,7 @@ const HeroSection = () => {
               {t("hero.subtitle")}
             </motion.p>
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4, ease: [0.4, 0, 0.2, 1] }} className="flex flex-col sm:flex-row gap-4 mb-6">
-              <a href="#cta" className="font-body font-medium text-[15px] px-8 py-3.5 rounded-lg cursor-pointer transition-all duration-200 text-center hover:shadow-lg bg-white text-primary">
+              <a className="font-body font-medium text-[15px] px-8 py-3.5 rounded-lg cursor-pointer transition-all duration-200 text-center hover:shadow-lg bg-white text-primary" href="https://www.reachquix.com/signup">
                 {t("hero.cta")}
               </a>
               <a href="#" className="font-body font-medium text-[15px] px-7 py-3 rounded-lg cursor-pointer transition-all duration-200 text-center border-2 border-white text-white hover:bg-white/10">
@@ -272,8 +272,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
