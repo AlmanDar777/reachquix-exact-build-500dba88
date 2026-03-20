@@ -12,11 +12,6 @@ const About = () => {
     { icon: Globe, title: t("about.v3Title"), desc: t("about.v3Desc") },
     { icon: Shield, title: t("about.v4Title"), desc: t("about.v4Desc") },
   ];
-  const team = [
-    { name: t("about.team1Name"), role: t("about.team1Role"), desc: t("about.team1Desc") },
-    { name: t("about.team2Name"), role: t("about.team2Role"), desc: t("about.team2Desc") },
-    { name: t("about.team3Name"), role: t("about.team3Role"), desc: t("about.team3Desc") },
-  ];
 
   return (
     <div className="min-h-screen">
