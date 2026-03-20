@@ -52,21 +52,6 @@ const About = () => {
             </div>
           </div>
         </section>
-        <section className="section-padding bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-heading text-[26px] md:text-[38px] text-secondary text-center mb-12">{t("about.teamTitle")}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {team.map((tm, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center p-6 rounded-xl border border-border">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"><Users size={32} className="text-primary" /></div>
-                  <h3 className="font-heading text-[18px] text-secondary mb-1">{tm.name}</h3>
-                  <p className="font-body text-[14px] text-primary font-medium mb-3">{tm.role}</p>
-                  <p className="font-body text-[15px] leading-[1.7] text-muted-foreground">{tm.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
         <section className="section-padding bg-muted">
           <div className="max-w-[800px] mx-auto text-center">
             <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6"><Globe size={32} className="text-primary" /></div>

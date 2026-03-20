@@ -154,7 +154,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
       )}
 
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] h-[520px] max-sm:w-screen max-sm:h-screen max-sm:bottom-0 max-sm:right-0 max-sm:rounded-none rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-border bg-background">
+        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] h-[520px] max-sm:w-[calc(100vw-24px)] max-sm:h-[70vh] max-sm:bottom-3 max-sm:right-3 max-sm:rounded-2xl rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-border bg-background">
           <div className="bg-primary px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               <span className="font-heading text-lg text-primary-foreground">{t("eva.title")}</span>
