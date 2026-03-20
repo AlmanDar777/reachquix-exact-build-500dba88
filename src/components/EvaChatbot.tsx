@@ -130,8 +130,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
                 style={{
                   position: "absolute",
                   bottom: -6,
-                  left: "50%",
-                  transform: "translateX(-50%)",
+                  right: 12,
                   width: 0,
                   height: 0,
                   borderLeft: "6px solid transparent",
