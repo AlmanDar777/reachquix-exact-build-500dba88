@@ -89,7 +89,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
         <>
           {/* Speech bubble */}
           <div
-            className={`fixed z-[9999] max-sm:bottom-[88px] max-sm:right-1/2 max-sm:translate-x-1/2 bottom-8 right-[88px] ${shouldBounce ? "eva-bubble-bounce" : ""}`}
+            className={`fixed z-[9999] bottom-8 right-[88px] max-sm:bottom-[76px] max-sm:right-6 max-sm:left-auto max-sm:translate-x-0 ${shouldBounce ? "eva-bubble-bounce" : ""}`}
             style={{
               animation: "evaFadeIn 500ms ease forwards",
             }}
@@ -130,8 +130,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
                 style={{
                   position: "absolute",
                   bottom: -6,
-                  left: "50%",
-                  transform: "translateX(-50%)",
+                  right: 12,
                   width: 0,
                   height: 0,
                   borderLeft: "6px solid transparent",
@@ -155,7 +154,7 @@ const EvaChatbot = forwardRef<HTMLDivElement>((_, ref) => {
       )}
 
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] h-[520px] max-sm:w-screen max-sm:h-screen max-sm:bottom-0 max-sm:right-0 max-sm:rounded-none rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-border bg-background">
+        <div className="fixed bottom-6 right-6 z-[9999] w-[380px] h-[520px] max-sm:w-[calc(100vw-24px)] max-sm:h-[70vh] max-sm:bottom-3 max-sm:right-3 max-sm:rounded-2xl rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-border bg-background">
           <div className="bg-primary px-4 py-3 flex items-center justify-between shrink-0">
             <div className="flex items-center gap-2">
               <span className="font-heading text-lg text-primary-foreground">{t("eva.title")}</span>

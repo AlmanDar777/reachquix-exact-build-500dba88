@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Target, Heart, Globe, Users, Shield } from "lucide-react";
+import { Target, Heart, Globe, Shield } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -11,11 +11,6 @@ const About = () => {
     { icon: Heart, title: t("about.v2Title"), desc: t("about.v2Desc") },
     { icon: Globe, title: t("about.v3Title"), desc: t("about.v3Desc") },
     { icon: Shield, title: t("about.v4Title"), desc: t("about.v4Desc") },
-  ];
-  const team = [
-    { name: t("about.team1Name"), role: t("about.team1Role"), desc: t("about.team1Desc") },
-    { name: t("about.team2Name"), role: t("about.team2Role"), desc: t("about.team2Desc") },
-    { name: t("about.team3Name"), role: t("about.team3Role"), desc: t("about.team3Desc") },
   ];
 
   return (
@@ -47,21 +42,6 @@ const About = () => {
                   <div className="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center mb-4"><v.icon size={24} className="text-primary" /></div>
                   <h3 className="font-heading text-[18px] md:text-[22px] text-secondary mb-3">{v.title}</h3>
                   <p className="font-body text-[15px] leading-[1.7] text-muted-foreground">{v.desc}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="section-padding bg-white">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-heading text-[26px] md:text-[38px] text-secondary text-center mb-12">{t("about.teamTitle")}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {team.map((tm, i) => (
-                <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} className="text-center p-6 rounded-xl border border-border">
-                  <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4"><Users size={32} className="text-primary" /></div>
-                  <h3 className="font-heading text-[18px] text-secondary mb-1">{tm.name}</h3>
-                  <p className="font-body text-[14px] text-primary font-medium mb-3">{tm.role}</p>
-                  <p className="font-body text-[15px] leading-[1.7] text-muted-foreground">{tm.desc}</p>
                 </motion.div>
               ))}
             </div>
