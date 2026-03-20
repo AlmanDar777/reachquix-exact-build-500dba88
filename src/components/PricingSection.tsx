@@ -50,9 +50,9 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <button className={`w-full font-body font-medium text-[15px] py-3.5 rounded-lg cursor-pointer transition-all duration-200 ${plan.ctaStyle === "primary" ? "text-white hover:shadow-lg" : plan.ctaStyle === "outline" ? "bg-transparent border-2 hover:bg-reachquix-light-green" : "text-white hover:opacity-90"}`} style={plan.ctaStyle === "primary" ? { backgroundColor: "#0C6038" } : plan.ctaStyle === "outline" ? { borderColor: "#0C6038", color: "#0C6038" } : { backgroundColor: "#0A1628" }}>
+              <a href="/signup" className={`block w-full font-body font-medium text-[15px] py-3.5 rounded-lg cursor-pointer transition-all duration-200 text-center ${plan.ctaStyle === "primary" ? "text-white hover:shadow-lg" : plan.ctaStyle === "outline" ? "bg-transparent border-2 hover:bg-reachquix-light-green" : "text-white hover:opacity-90"}`} style={plan.ctaStyle === "primary" ? { backgroundColor: "#0C6038" } : plan.ctaStyle === "outline" ? { borderColor: "#0C6038", color: "#0C6038" } : { backgroundColor: "#0A1628" }}>
                 {plan.cta}
-              </button>
+              </a>
               {plan.note && <p className="font-body text-[13px] text-reachquix-muted-text text-center mt-3">{plan.note}</p>}
             </motion.div>
           ))}
