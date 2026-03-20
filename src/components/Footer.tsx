@@ -43,8 +43,8 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
   return (
     <footer ref={ref} className="section-padding bg-secondary">
       <div className="max-w-[1200px] mx-auto">
-        <div className="mb-12">
-          <p className="font-heading text-[22px] text-white mb-2">{brand}</p>
+      <div className="mb-12">
+          <Link to="/" className="font-heading text-[22px] text-white mb-2 block">{brand}</Link>
           <p className="font-body text-[14px]" style={{ color: "#64748B" }}>{t("footer.tagline")}</p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
