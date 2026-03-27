@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import EvaChatbot from "@/components/EvaChatbot";
 import ScrollToTop from "@/components/ScrollToTop";
+import Maintenance from "./pages/Maintenance.tsx";
 import Index from "./pages/Index.tsx";
 import Features from "./pages/Features.tsx";
 import Pricing from "./pages/Pricing.tsx";
@@ -25,13 +26,20 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
+const isMaintenanceMode = import.meta.env.VITE_MAINTENANCE_MODE === "true";
+
+const App = () => {
+  if (isMaintenanceMode) {
+    return <Maintenance />;
+  }
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Sonner />
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/features" element={<Features />} />
           <Route path="/crm" element={<CRM />} />
@@ -50,11 +58,12 @@ const App = () => (
           <Route path="/gdpr" element={<GDPRPage />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-        <EvaChatbot />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+          </Routes>
+          <EvaChatbot />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
