@@ -58,11 +58,12 @@ const App = () => {
           <Route path="/gdpr" element={<GDPRPage />} />
           <Route path="/docs" element={<Docs />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-        <EvaChatbot />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+          </Routes>
+          <EvaChatbot />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
