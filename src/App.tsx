@@ -26,7 +26,7 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
-const isMaintenanceMode = false; // Set to true to enable maintenance mode
+const isMaintenanceMode = true; // Set to false to disable maintenance mode
 
 const App = () => {
   if (isMaintenanceMode) {
