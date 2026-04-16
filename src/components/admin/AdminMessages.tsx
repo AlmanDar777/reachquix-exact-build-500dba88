@@ -30,7 +30,7 @@ const AdminMessages = () => {
   }, []);
 
   const markAs = async (id: string, field: "is_read" | "is_replied", value: boolean) => {
-    await supabase.from("contact_messages").update({ [field]: value }).eq("id", id);
+    await supabase.from("contact_messages").update({ [field]: value } as any).eq("id", id);
     loadMessages();
     if (selected?.id === id) setSelected({ ...selected, [field]: value });
   };
