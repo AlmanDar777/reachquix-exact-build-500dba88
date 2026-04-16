@@ -13,6 +13,7 @@ const Navbar = () => {
   const navLinks = [
     { label: t("nav.home", "Home"), href: "/" },
     { label: t("nav.features"), href: "/features" },
+    { label: "Email Marketing", href: "/email-marketing" },
     { label: t("nav.crm", "CRM"), href: "/crm" },
     { label: t("nav.pricing"), href: "/pricing" },
     { label: t("nav.blog"), href: "/blog" },

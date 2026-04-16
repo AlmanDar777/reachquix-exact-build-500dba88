@@ -20,6 +20,7 @@ const Footer = forwardRef<HTMLElement>((_, ref) => {
   const footerLinks = {
     [t("footer.product")]: [
       { label: t("footer.features"), href: "/features" },
+      { label: "Email Marketing", href: "/email-marketing" },
       { label: t("footer.crm"), href: "/crm" },
       { label: t("footer.pricing"), href: "/pricing" },
     ],

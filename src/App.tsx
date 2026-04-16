@@ -16,6 +16,7 @@ import Signup from "./pages/Signup.tsx";
 import Admin from "./pages/Admin.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
 import CRM from "./pages/CRM.tsx";
+import EmailMarketing from "./pages/EmailMarketing.tsx";
 import HelpCenter from "./pages/HelpCenter.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
@@ -43,6 +44,7 @@ const App = () => {
           <Route path="/" element={<Index />} />
           <Route path="/features" element={<Features />} />
           <Route path="/crm" element={<CRM />} />
+          <Route path="/email-marketing" element={<EmailMarketing />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
